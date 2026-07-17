@@ -1,0 +1,12 @@
+{
+  "name": "arkvue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate:sitemap": "node scripts/generate-sitemap.js"
+  },
+  "devDependencies": {
+    "glob": "^10.3.10",
+    "sitemap": "^7.1.1"
+  }
+}
