@@ -1,0 +1,36 @@
+{
+  "system_prompt": "You are an AI assistant designed to help with automation tasks...\n\nBe precise, efficient, and safe in all operations.",
+  "script_path": "",
+  "delay_ms": 100,
+  "retries": 3,
+  "explore_coords": {
+    "x": 56,
+    "y": 609
+  },
+  "search_coords": {
+    "x": 693,
+    "y": 240
+  },
+  "profiles": {
+    "Profile 1": {
+      "x": 706,
+      "y": 349
+    },
+    "Profile 2": {
+      "x": 701,
+      "y": 444
+    },
+    "Profile 3": {
+      "x": 701,
+      "y": 534
+    },
+    "Profile 4": {
+      "x": 705,
+      "y": 625
+    },
+    "Profile 5": {
+      "x": 693,
+      "y": 711
+    }
+  }
+}
