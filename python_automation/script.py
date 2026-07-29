@@ -113,11 +113,7 @@ def show_config():
     selector_labels = {
         "explore": "Explore Page Link",
         "search_input": "Search Input Field",
-        "profile_1": "Profile 1 Selector",
-        "profile_2": "Profile 2 Selector",
-        "profile_3": "Profile 3 Selector",
-        "profile_4": "Profile 4 Selector",
-        "profile_5": "Profile 5 Selector"
+        "profile_container": "Profile Container (list of links)"
     }
 
     for key, label_text in selector_labels.items():
@@ -264,25 +260,38 @@ def play_script():
                     return
                 status_label.config(text=f"Status: Clicking Explore...")
                 root.update()
+                print("[DEBUG] Clicking Explore...")
                 page.click(selectors["explore"], timeout=10000)
+                print("[DEBUG] Explore clicked, waiting for search input...")
                 status_label.config(text=f"Status: Waiting for Explore page...")
                 root.update()
                 # Wait for search input to appear (indicates Explore page loaded)
-                page.wait_for_selector(selectors["search_input"], state="visible", timeout=15000)
-                status_label.config(text=f"Status: Explore page loaded")
+                try:
+                    print(f"[DEBUG] Waiting for search input with selector: {selectors['search_input']}")
+                    page.wait_for_selector(selectors["search_input"], state="visible", timeout=30000)
+                    print("[DEBUG] Search input visible")
+                    status_label.config(text=f"Status: Explore page loaded - search input visible")
+                except Exception as e:
+                    status_label.config(text=f"Status: ERROR - Search input not found: {e}")
+                    root.update()
+                    finish_playback()
+                    return
                 root.update()
                 time.sleep(0.5)
 
                 # Click Search Input first, then type keyword
+                page.get_by_selector(selectors["search_input"]).click()
                 if check_stop():
                     finish_playback()
                     return
-                status_label.config(text=f"Status: Clicking Search...")
+                status_label.config(text=f"Status: Filling Search...")
                 root.update()
-                page.click(selectors["search_input"])
-                time.sleep(0.5)
-                page.fill(selectors["search_input"], "")
-                page.type(selectors["search_input"], keyword, delay=delays["type"])
+                print("[DEBUG] Filling search input directly...")
+                
+                # Just fill directly - page.fill() clicks and types
+                print(f"[DEBUG] Calling page.fill with selector: {selectors['search_input']}, keyword: {keyword}")
+                page.fill(selectors["search_input"], keyword, delay=delays["type"], timeout=10000)
+                print(f"[DEBUG] Typed keyword: {keyword}")
                 status_label.config(text=f"Status: Typed keyword '{keyword}'")
                 root.update()
 
@@ -290,20 +299,22 @@ def play_script():
                 if check_stop():
                     finish_playback()
                     return
+                print("[DEBUG] Pressing Enter...")
                 page.press(selectors["search_input"], "Enter")
+                print("[DEBUG] Pressed Enter")
                 status_label.config(text=f"Status: Waiting for results...")
                 root.update()
+                print("[DEBUG] Waiting for load state...")
                 page.wait_for_load_state("domcontentloaded", timeout=15000)
+                print("[DEBUG] Load state complete")
                 time.sleep(1)
 
                 # Loop through profiles 1-5
+                profiles_selector = "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 a[href^='/'][role='link']"
+                
                 for i in range(1, 6):
                     if check_stop():
                         break
-                    profile_key = f"profile_{i}"
-                    selector = selectors.get(profile_key)
-                    if not selector:
-                        continue
                     
                     status_label.config(text=f"Status: Clicking Profile {i}")
                     root.update()
@@ -313,32 +324,39 @@ def play_script():
                         break
                     
                     try:
-                        page.click(selector)
-                        status_label.config(text=f"Status: Clicked Profile {i}")
-                        root.update()
-                        time.sleep(2)
+                        # Wait for profile links to be present (after re-search)
+                        page.wait_for_selector(profiles_selector, state="attached", timeout=10000)
                         
-                        # Go back to search results
-                        page.go_back()
-                        status_label.config(text=f"Status: Back to results")
-                        root.update()
-                        page.wait_for_load_state("domcontentloaded", timeout=10000)
-                        time.sleep(1)
-                        
-                        # Re-search for keyword before next profile (except last)
-                        if i < 5:
-                            status_label.config(text=f"Status: Re-searching for '{keyword}'")
+                        # Get all profile links and click by index
+                        profile_links = page.query_selector_all(profiles_selector)
+                        if len(profile_links) >= i:
+                            profile_links[i-1].click()
+                            status_label.config(text=f"Status: Clicked Profile {i}")
                             root.update()
-                            page.click(selectors["search_input"])
-                            time.sleep(0.5)
-                            page.fill(selectors["search_input"], "")
-                            page.type(selectors["search_input"], keyword, delay=delays["type"])
-                            page.press(selectors["search_input"], "Enter")
-                            status_label.config(text=f"Status: Waiting for results...")
+                            time.sleep(2)
+                            
+                            # Go back to search results
+                            page.go_back()
+                            status_label.config(text=f"Status: Back to results")
                             root.update()
-                            page.wait_for_load_state("domcontentloaded", timeout=15000)
+                            page.wait_for_load_state("domcontentloaded", timeout=10000)
                             time.sleep(1)
-                        
+                            
+                            # Re-search for keyword before next profile (except last)
+                            if i < 5:
+                                status_label.config(text=f"Status: Re-searching for '{keyword}'")
+                                root.update()
+                                page.fill(selectors["search_input"], keyword, delay=delays["type"])
+                                page.press(selectors["search_input"], "Enter")
+                                status_label.config(text=f"Status: Waiting for results...")
+                                root.update()
+                                page.wait_for_load_state("domcontentloaded", timeout=15000)
+                                time.sleep(1)
+                        else:
+                            status_label.config(text=f"Status: Profile {i} not found (only {len(profile_links)} profiles)")
+                            root.update()
+                            time.sleep(1)
+                            
                     except Exception as e:
                         status_label.config(text=f"Status: Profile {i} failed - {e}")
                         root.update()

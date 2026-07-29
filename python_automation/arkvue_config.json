@@ -1,52 +1,15 @@
 {
   "system_prompt": "You are an AI assistant designed to help with automation tasks...\n\nBe precise, efficient, and safe in all operations.",
-  "script_path": "",
-  "delay_ms": 100,
-  "retries": 3,
-  "explore_coords": {
-    "x": 56,
-    "y": 609
-  },
-  "search_coords": {
-    "x": 693,
-    "y": 240
-  },
-  "profiles": {
-    "Profile 1": {
-      "x": 706,
-      "y": 349
-    },
-    "Profile 2": {
-      "x": 701,
-      "y": 444
-    },
-    "Profile 3": {
-      "x": 701,
-      "y": 534
-    },
-    "Profile 4": {
-      "x": 705,
-      "y": 625
-    },
-    "Profile 5": {
-      "x": 693,
-      "y": 711
-    }
-  },
   "browser_path": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
   "selectors": {
-    "explore": "a[href=\"/explore/\"][role=\"link\"]",
+    "explore": "a[href*='/explore/'][role='link']",
     "search_input": "input[aria-label=\"Search input\"]",
-    "profile_1": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 > div:first-child a[href^='/'][role='link']",
-    "profile_2": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 > div:nth-child(2) a[href^='/'][role='link']",
-    "profile_3": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 > div:nth-child(3) a[href^='/'][role='link']",
-    "profile_4": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 > div:nth-child(4) a[href^='/'][role='link']",
-    "profile_5": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 > div:nth-child(5) a[href^='/'][role='link']"
+    "profile_container": "div.x6s0dn4.x78zum5.xdt5ytf.x5yr21d.x1odjw0f.x1n2onr6.xh8yej3 a[href^='/'][role='link']"
   },
   "delays": {
     "click": 500,
-    "type": 500,
-    "search_wait": 500,
-    "profile_wait": 500
+    "type": 100,
+    "search_wait": 2000,
+    "profile_wait": 2000
   }
 }
