@@ -1,4 +1,5 @@
 import json
+import re
 import subprocess
 import threading
 import time
@@ -7,10 +8,42 @@ from tkinter import scrolledtext
 
 from playwright.sync_api import sync_playwright
 
-SEARCH_KEYWORD = "trading"   # change this to search anything else
+SEARCH_KEYWORD = "testing"   # change this to search anything else
 
 stop_event = threading.Event()
 worker_thread = None
+
+
+def extract_profile_info(page):
+    # username sits inside the profile's <h2> - h2 maps to accessibility role "heading" level 2
+    username = ""
+    heading = page.get_by_role("heading", level=2)
+    if heading.count() > 0:
+        username = heading.first.inner_text().strip()
+
+    # posts/followers/following are plain text inside <header> - regex is more robust
+    # here than chasing the auto-generated class names
+    header_text = page.locator("header").first.inner_text()
+    posts = _match(r'([\d,\.]+\s*[KkMm]?)\s*posts', header_text)
+    followers = _match(r'([\d,\.]+\s*[KkMm]?)\s*followers', header_text)
+
+    # the bio text uses Instagram's stable "_ap3a" class (not the auto-generated x... ones)
+    bio = ""
+    bio_el = page.locator('span._ap3a').first
+    if bio_el.count() > 0:
+        bio = bio_el.inner_text().strip()
+
+    return {
+        "username": username or "(unknown)",
+        "followers": followers or "?",
+        "posts": posts or "?",
+        "bio": bio or "(no bio)",
+    }
+
+
+def _match(pattern, text):
+    m = re.search(pattern, text)
+    return m.group(1) if m else None
 
 
 def run_automation(log):
@@ -79,6 +112,13 @@ def run_automation(log):
             page.wait_for_load_state("domcontentloaded")
             page.wait_for_timeout(2000)
 
+            info = extract_profile_info(page)
+            log(f"  Username : {info['username']}")
+            log(f"  Followers: {info['followers']}")
+            log(f"  Posts    : {info['posts']}")
+            log(f"  Bio      : {info['bio']}")
+            log("-" * 40)
+
         log("Done - all 5 profiles opened.")
 
 
@@ -123,7 +163,7 @@ def log(message):
 
 root = tk.Tk()
 root.title("Instagram Profile Opener")
-root.geometry("420x320")
+root.geometry("520x420")
 
 play_button = tk.Button(
     root, text="Play", font=("Segoe UI", 14, "bold"),
@@ -132,7 +172,7 @@ play_button = tk.Button(
 )
 play_button.pack(pady=15)
 
-log_box = scrolledtext.ScrolledText(root, width=48, height=12, font=("Consolas", 9))
+log_box = scrolledtext.ScrolledText(root, width=62, height=16, font=("Consolas", 9))
 log_box.pack(padx=10, pady=5)
 
 root.mainloop()
