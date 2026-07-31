@@ -11,5 +11,7 @@
     "type": 100,
     "search_wait": 2000,
     "profile_wait": 2000
-  }
+  },
+  "nvidia_api_key": "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",
+  "google_script_url": "https://script.google.com/macros/s/AKfycbwIbyNIsR0CMNdQV_Y4NZicnLdibPT9KNHEpdpUxa5Hl-4_4825Ki3NGZl_SD4a4j31ZQ/exec"
 }
