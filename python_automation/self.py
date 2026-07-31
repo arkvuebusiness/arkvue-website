@@ -7,7 +7,7 @@ import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
 
 from playwright.sync_api import sync_playwright
-from openai import OpenAI
+from groq import Groq
 import requests
 
 CONFIG_FILE = "arkvue_config.json"
@@ -31,16 +31,16 @@ def ask_llm(client, profile_info):
         f"Bio: {profile_info['bio']}"
     )
     completion = client.chat.completions.create(
-        model="nvidia/nemotron-3-ultra-550b-a55b",
+        model="llama-3.1-8b-instant",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
         temperature=1,
-        top_p=0.95,
-        max_tokens=16384,
-        extra_body={"chat_template_kwargs": {"enable_thinking": True}, "reasoning_budget": 16384},
+        max_completion_tokens=2048,
+        top_p=1,
         stream=False,
+        stop=None,
     )
     return completion.choices[0].message.content.strip()
 
@@ -84,10 +84,7 @@ def run_automation(keywords, log):
         config = json.load(f)
     browser_path = config["browser_path"]
 
-    client = OpenAI(
-        base_url="https://integrate.api.nvidia.com/v1",
-        api_key=config["nvidia_api_key"],
-    )
+    client = Groq(api_key=config["groq_api_key"])
 
     log("Launching browser...")
     subprocess.Popen([
@@ -223,10 +220,10 @@ def open_settings():
     tk.Button(path_frame, text="Browse...", command=browse_path).pack(side="left", padx=(8, 0))
 
     # --- LLM API key ---
-    tk.Label(win, text="NVIDIA LLM API key:", font=("Segoe UI", 10, "bold")).pack(
+    tk.Label(win, text="Groq LLM API key:", font=("Segoe UI", 10, "bold")).pack(
         anchor="w", padx=15, pady=(15, 0)
     )
-    key_var = tk.StringVar(value=config.get("nvidia_api_key", ""))
+    key_var = tk.StringVar(value=config.get("groq_api_key", ""))
     key_entry = tk.Entry(win, textvariable=key_var, font=("Consolas", 9), show="*")
     key_entry.pack(fill="x", padx=15, pady=5)
 
@@ -246,7 +243,7 @@ def open_settings():
     # --- Save ---
     def on_save():
         config["browser_path"] = path_var.get().strip()
-        config["nvidia_api_key"] = key_var.get().strip()
+        config["groq_api_key"] = key_var.get().strip()
         config["google_script_url"] = sheet_var.get().strip()
         save_config(config)
         messagebox.showinfo("Saved", "Settings saved to arkvue_config.json", parent=win)
