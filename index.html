@@ -1,524 +1,3390 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <!-- Google tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNS5L0FBRG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-GNS5L0FBRG');
-    </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xmwxf6lzca");
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ARKVUE helps founder-led trading businesses identify the bottleneck slowing growth and improve the systems behind acquisition, conversion and retention.">
-    <title>ARKVUE | Growth Systems for Trading Businesses</title>
+ 
+    <title>ARKVUE | Growth Partner for Trading Businesses</title>
+ 
+    <meta name="description"
+        content="ARKVUE helps founder-led trading businesses identify and fix growth bottlenecks across acquisition, qualification, conversion, activation and retention.">
+    <meta name="author" content="ARKVUE">
     <link rel="canonical" href="https://arkvue.co/">
-    <!-- Favicons -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!-- SEO / Social -->
+ 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arkvue.co/">
-    <meta property="og:title" content="ARKVUE | Growth Systems for Trading Businesses">
-    <meta property="og:description" content="ARKVUE helps founder-led trading businesses identify the bottleneck slowing growth and improve the systems behind acquisition, conversion and retention.">
-    <meta property="og:image" content="https://arkvue.co/og-image.png">
-    <meta property="og:site_name" content="ARKVUE">
+    <meta property="og:title" content="ARKVUE | Growth Partner for Trading Businesses">
+    <meta property="og:description"
+        content="ARKVUE helps founder-led trading businesses identify and fix growth bottlenecks.">
+ 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://arkvue.co/">
-    <meta name="twitter:title" content="ARKVUE | Growth Systems for Trading Businesses">
-    <meta name="twitter:description" content="ARKVUE helps founder-led trading businesses identify the bottleneck slowing growth and improve the systems behind acquisition, conversion and retention.">
-    <meta name="twitter:image" content="https://arkvue.co/og-image.png">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="sitemap" href="/sitemap.xml">
-    <!-- JSON-LD: Organization -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "ARKVUE",
-  "url": "https://arkvue.co/",
-  "logo": "https://arkvue.co/favicon.svg",
-  "sameAs": [
-    "https://www.linkedin.com/company/arkvue",
-    "https://x.com/ARKVUE",
-    "https://www.instagram.com/arkvue.co"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+91-7666976869",
-    "contactType": "customer service",
-    "email": "arkvuebusiness@gmail.com"
-  }
-}
-</script>
-    <!-- JSON-LD: WebSite (sitelinks searchbox) -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://arkvue.co/",
-  "name": "ARKVUE",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://arkvue.co/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: "#172033",
-                        muted: "#5d6678",
-                        line: "#e5e7eb",
-                        soft: "#f7f8fa",
-                        accent: "#1f6feb",
-                        accentDark: "#1557c0"
-                    },
-                    boxShadow: {
-                        enterprise: "0 20px 60px rgba(23, 32, 51, 0.08)",
-                        subtle: "0 10px 30px rgba(23, 32, 51, 0.06)"
-                    }
-                }
-            }
-        };
-    </script>
+ 
+    <link rel="icon" href="/favicon.ico" sizes="any">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+ 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 
     <style>
+        :root {
+            --ink: #172033;
+            --muted: #5d6678;
+            --line: #e7e9ee;
+            --soft: #f6f7f9;
+            --accent: #1f6feb;
+            --accent-dark: #1a5fd0;
+            --accent-soft: #eff6ff;
+            --white: #ffffff;
+ 
+            --shadow: 0 24px 70px rgba(23, 32, 51, 0.08);
+            --shadow-small: 0 10px 30px rgba(23, 32, 51, 0.06);
+        }
+ 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+ 
+        [id] {
+            scroll-margin-top: 100px;
+        }
+ 
         body {
+            background: var(--white);
+            color: var(--ink);
             font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.5;
+            font-size: 0.9375rem;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
-
-        .hero-grid {
-            background-image:
-                linear-gradient(rgba(23, 32, 51, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(23, 32, 51, 0.05) 1px, transparent 1px);
-            background-size: 42px 42px;
+ 
+        a {
+            color: inherit;
+            text-decoration: none;
         }
-
-        .metric-line {
-            width: var(--line-width);
+ 
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
         }
-
-        .nav-island {
-            box-shadow: 0 16px 40px rgba(23, 32, 51, 0.10);
-            transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+ 
+        button {
+            cursor: pointer;
         }
-
-        .nav-island:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 20px 48px rgba(23, 32, 51, 0.13);
+ 
+        img,
+        video {
+            max-width: 100%;
+            display: block;
         }
-
+ 
+        ::selection {
+            background: rgba(31, 111, 235, 0.16);
+            color: var(--ink);
+        }
+ 
+        .container {
+            width: min(100% - 40px, 1160px);
+            margin-inline: auto;
+        }
+ 
+        .section {
+            padding: 48px 0;
+            border-top: 1px solid var(--line);
+        }
+ 
+        .section-soft {
+            background: var(--soft);
+        }
+ 
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+ 
+        .eyebrow::before {
+            content: "";
+            width: 22px;
+            height: 1px;
+            background: var(--accent);
+            opacity: 0.7;
+        }
+ 
+        .section-head {
+            max-width: 760px;
+        }
+ 
+        .section-head h2 {
+            margin-top: 20px;
+            font-size: clamp(1.7rem, 4vw, 2.7rem);
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            line-height: 1.12;
+        }
+ 
+        .section-head p {
+            margin-top: 22px;
+            color: var(--muted);
+            font-size: 1.02rem;
+            line-height: 1.7;
+            max-width: 640px;
+        }
+ 
+        /* BUTTONS */
+ 
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 0;
+            border-radius: 999px;
+            padding: 13px 22px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            transition:
+                transform .3s cubic-bezier(.16,1,.3,1),
+                background .25s ease,
+                color .25s ease,
+                box-shadow .3s ease;
+        }
+ 
+        .button:hover {
+            transform: translateY(-2px);
+        }
+ 
+        .button-primary {
+            background: var(--accent);
+            color: var(--white);
+        }
+ 
+        .button-primary:hover {
+            background: var(--accent-dark);
+        }
+ 
+        .button-ghost {
+            background: var(--soft);
+            color: var(--ink);
+            border: 1px solid var(--line);
+        }
+ 
+        .button-ghost:hover {
+            background: var(--white);
+            border-color: rgba(23, 32, 51, .2);
+        }
+ 
+        .arr {
+            transition: transform .3s cubic-bezier(.16,1,.3,1);
+        }
+ 
+        .button:hover .arr,
+        .text-link:hover .arr {
+            transform: translateX(4px);
+        }
+ 
+        /* =========================
+           NAVIGATION
+        ========================= */
+ 
+        .nav-wrapper {
+            position: fixed;
+            inset: 0 0 auto 0;
+            z-index: 100;
+        }
+ 
+        .navbar {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: none;
+            min-height: 72px;
+            margin-inline: auto;
+            padding: 16px 40px;
+            background: transparent;
+            border-bottom: 1px solid transparent;
+            transition:
+                background .3s ease,
+                border-color .3s ease,
+                backdrop-filter .3s ease;
+        }
+ 
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, .82);
+            border-bottom-color: var(--line);
+            backdrop-filter: blur(14px) saturate(1.4);
+            -webkit-backdrop-filter: blur(14px) saturate(1.4);
+        }
+ 
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .02em;
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .brand-mark {
+            width: 25px;
+            height: 25px;
+            flex: 0 0 25px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+ 
+        /*
+         * TRUE CENTER NAVIGATION
+         * The nav is positioned independently from
+         * the logo and CTA so it remains mathematically centered.
+         */
+ 
+        .desktop-nav {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+ 
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+ 
         .nav-link {
-            transition: color 160ms ease, background-color 160ms ease;
+            position: relative;
+            color: var(--muted);
+            font-size: .84rem;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: color .2s ease;
         }
-
+ 
         .nav-link:hover {
-            color: #172033;
+            color: var(--ink);
         }
-
-        .nav-menu {
-            background: rgba(255, 255, 255, 0.64);
-            border-color: rgba(255, 255, 255, 0.48);
+ 
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -7px;
+            height: 1px;
+            background: var(--ink);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform .25s ease;
         }
-
+ 
+        .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+ 
+        .nav-right {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+ 
         .nav-cta {
-            box-shadow: 0 16px 40px rgba(23, 32, 51, 0.18);
+            white-space: nowrap;
+            padding: 10px 18px;
+        }
+ 
+        .menu-toggle {
+            display: none;
+            width: 38px;
+            height: 38px;
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            background: var(--white);
+            color: var(--ink);
+        }
+ 
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 82px 20px auto;
+            z-index: 90;
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            background: rgba(255,255,255,.97);
+            padding: 14px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+ 
+        .mobile-menu.open {
+            display: grid;
+            gap: 4px;
+        }
+ 
+        .mobile-link {
+            border-radius: 14px;
+            padding: 14px;
+            color: var(--muted);
+            font-size: .95rem;
+            font-weight: 600;
+        }
+ 
+        .mobile-link:hover {
+            background: var(--soft);
+            color: var(--ink);
+        }
+ 
+        /* =========================
+           HERO
+        ========================= */
+ 
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 92vh;
+            padding: 160px 0 100px;
+            text-align: center;
+        }
+ 
+        .hero-content {
+            width: min(100%, 900px);
+            margin-inline: auto;
+        }
+ 
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--white);
+            padding: 8px 15px;
+            color: var(--muted);
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            box-shadow: var(--shadow-small);
+        }
+ 
+       .hero h1 {
+    margin: 26px auto 0;
+    max-width: 860px;
+
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: 600;
+
+    /* more breathing room between letters */
+    letter-spacing: -0.015em;
+
+    line-height: 1.08;
+
+    /* lighter than the original #172033 */
+    color: #3a4353;
+}
+ 
+        .line-mask {
+            display: block;
+            overflow: hidden;
+        }
+ 
+        .line-inner {
+            display: block;
+            transform: translateY(105%);
+            transition: transform 1s cubic-bezier(.16,1,.3,1);
+        }
+ 
+        .hero-ready .line-inner {
+            transform: translateY(0);
+        }
+ 
+        .hero-ready .line-mask:nth-child(2) .line-inner {
+            transition-delay: .1s;
+        }
+ 
+        .hero-copy {
+            max-width: 640px;
+            margin: 26px auto 0;
+            color: var(--muted);
+            font-size: clamp(.95rem, 1.6vw, 1.08rem);
+            line-height: 1.7;
+            opacity: 0;
+            transform: translateY(16px);
+            transition:
+                opacity .8s ease .45s,
+                transform .8s cubic-bezier(.16,1,.3,1) .45s;
+        }
+ 
+        .hero-copy strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+ 
+        .hero-actions {
+            margin-top: 32px;
+            opacity: 0;
+            transform: translateY(14px);
+            transition:
+                opacity .8s ease .6s,
+                transform .8s cubic-bezier(.16,1,.3,1) .6s;
+        }
+ 
+        .hero-meta {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: .8rem;
+            opacity: 0;
+            transition: opacity .8s ease .75s;
+        }
+ 
+        .hero-meta strong {
+            color: var(--ink);
+        }
+ 
+        .dot-separator {
+            margin-inline: 9px;
+            color: var(--line);
+        }
+ 
+        .hero-ready .hero-copy,
+        .hero-ready .hero-actions {
+            opacity: 1;
+            transform: none;
+        }
+ 
+        .hero-ready .hero-meta {
+            opacity: 1;
+        }
+ 
+        /* =========================
+           REVEALS
+        ========================= */
+ 
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition:
+                opacity .8s ease,
+                transform .9s cubic-bezier(.16,1,.3,1);
+        }
+ 
+        .reveal.in {
+            opacity: 1;
+            transform: none;
+        }
+ 
+        [data-delay="1"] { transition-delay: .08s; }
+        [data-delay="2"] { transition-delay: .16s; }
+        [data-delay="3"] { transition-delay: .24s; }
+        [data-delay="4"] { transition-delay: .32s; }
+ 
+        /* =========================
+           GROWTH PROBLEM
+        ========================= */
+ 
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 58px;
+        }
+ 
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: var(--white);
+            box-shadow: 0 6px 20px rgba(23,32,51,.03);
+            transition:
+                transform .4s cubic-bezier(.16,1,.3,1),
+                border-color .3s ease,
+                box-shadow .4s ease;
+        }
+ 
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(31,111,235,.3);
+            box-shadow: 0 22px 44px rgba(23,32,51,.08);
+        }
+ 
+        .problem-card {
+            display: flex;
+            gap: 18px;
+            padding: 26px;
+        }
+ 
+        .card-number {
+            display: grid;
+            flex: 0 0 auto;
+            width: 40px;
+            height: 40px;
+            place-items: center;
+            border-radius: 12px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: .78rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+        }
+ 
+        .problem-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+ 
+        .problem-card p {
+            margin-top: 9px;
+            color: var(--muted);
+            font-size: .92rem;
+            line-height: 1.6;
+        }
+ 
+        .problem-card p strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+ 
+        .pullquote {
+            margin-top: 60px;
+            max-width: 780px;
+            font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+            font-weight: 500;
+            line-height: 1.35;
+        }
+ 
+        .pullquote span {
+            color: var(--muted);
+        }
+ 
+        /* =========================
+           WHO WE HELP
+        ========================= */
+ 
+        .audience-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 56px;
+        }
+ 
+        .audience-card {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+ 
+        /* =========================
+        CLICKABLE AUDIENCE CARDS
+        ========================= */
+ 
+        .audience-card {
+            position: relative;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            transition:
+                transform 260ms cubic-bezier(.16, 1, .3, 1),
+                box-shadow 260ms cubic-bezier(.16, 1, .3, 1),
+                border-color 260ms ease;
+        }
+ 
+        .audience-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(23, 32, 51, 0.10);
+            border-color: #cfd4dc;
+        }
+ 
+        /* Top row: icon + directional arrow */
+ 
+        .audience-card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+ 
+        .audience-arrow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+ 
+            color: var(--muted);
+            font-size: .9rem;
+ 
+            transition:
+                transform 260ms cubic-bezier(.16, 1, .3, 1),
+                color 220ms ease;
+        }
+ 
+        .audience-card:hover .audience-arrow {
+            transform: translate(3px, -3px);
+            color: var(--ink);
+        }
+ 
+        /* Explore + arrow */
+ 
+        .audience-card-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+ 
+            margin-top: 28px;
+            padding-top: 18px;
+ 
+            border-top: 1px solid var(--line);
+ 
+            color: var(--ink);
+            font-size: 0.86rem;
+            font-weight: 700;
+ 
+            transition: color 220ms ease;
+        }
+ 
+        .audience-learn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+ 
+            margin-top: 28px;
+            padding-top: 18px;
+ 
+            border-top: 1px solid var(--line);
+ 
+            color: var(--ink);
+            font-size: 0.86rem;
+            font-weight: 700;
+ 
+            transition: color 220ms ease;
+        }
+ 
+        .audience-learn i {
+            transition: transform 260ms cubic-bezier(.16, 1, .3, 1);
+        }
+ 
+        .audience-card:hover .audience-learn {
+            color: var(--accent);
+        }
+ 
+        .audience-card:hover .audience-learn i {
+            transform: translateX(4px);
+        }
+ 
+        .audience-card-arrow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+ 
+            width: 32px;
+            height: 32px;
+ 
+            border: 1px solid var(--line);
+            border-radius: 50%;
+ 
+            font-size: 1rem;
+ 
+            transition:
+                transform 260ms cubic-bezier(.16, 1, .3, 1),
+                background 220ms ease,
+                color 220ms ease,
+                border-color 220ms ease;
+        }
+ 
+        /* Arrow movement */
+ 
+        .audience-card:hover .audience-card-arrow {
+            transform: translateX(4px);
+            background: var(--ink);
+            border-color: var(--ink);
+            color: var(--white);
+        }
+ 
+        .audience-icon {
+            display: grid;
+            width: 46px;
+            height: 46px;
+            place-items: center;
+            border-radius: 13px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 1.05rem;
+            transition:
+                background 220ms ease,
+                color 220ms ease,
+                transform 260ms cubic-bezier(.16, 1, .3, 1);
+        }
+ 
+        .audience-card:hover .audience-icon {
+            background: var(--accent);
+            color: var(--white);
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(31,111,235,.3);
+        }
+ 
+        .audience-card .small-label {
+            margin-top: 22px;
+            color: var(--muted);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+        }
+ 
+        .audience-card h3 {
+            margin-top: 8px;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+ 
+        .audience-card p {
+            margin-top: 12px;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+ 
+        .audience-card .audience-for {
+            margin-top: 10px;
+            color: var(--muted);
+            line-height: 1.65;
+            font-size: .88rem;
+        }
+ 
+        .audience-flow {
+            margin-top: auto;
+            padding-top: 24px;
+            color: var(--ink);
+            font-size: .78rem;
+            font-weight: 700;
+        }
+ 
+        .audience-flow-label {
+            display: block;
+            margin-bottom: 7px;
+            color: var(--muted);
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+ 
+        .audience-flow em {
+            font-style: normal;
+            color: var(--accent);
+            margin: 0 5px;
         }
     </style>
 </head>
-<body class="bg-white text-ink antialiased">
-    <header class="fixed inset-x-0 top-5 z-50 px-4">
-            <div class="mx-auto flex max-w-[76rem] items-center justify-between gap-3 sm:gap-5">
-                <a href="#" class="flex shrink-0 items-center gap-2 py-3 text-lg font-semibold tracking-wide text-ink transition  active:scale-[0.98]" aria-label="ARKVUE home">
-                <img src="favicon/A.svg" alt="" class="h-8 w-8 rounded-md object-cover">
+ 
+<body>
+ 
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+ 
+    <header class="nav-wrapper">
+        <div class="navbar" id="navbar">
+ 
+            <a href="#top" class="brand" aria-label="ARKVUE home">
+                <img
+                    class="brand-mark"
+                    src="/favicon/A.svg"
+                    alt="ARKVUE logo">
                 <span>ARKVUE</span>
             </a>
-
-            <nav class="nav-island nav-menu hidden items-center gap-1 rounded-full border px-2 py-2 text-sm font-medium text-muted backdrop-blur-xl md:flex" aria-label="Primary navigation">
-                <a class="nav-link rounded-full px-4 py-2" href="#who-we-help">Who We Help</a>
-                <a class="nav-link rounded-full px-4 py-2" href="#how-it-works">How It Works</a>
-                <a class="nav-link rounded-full px-4 py-2" href="#about">About</a>
+ 
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a class="nav-link" href="#who-we-help">Who We Help</a>
+                <a class="nav-link" href="#how-it-works">How It Works</a>
+                <a class="nav-link" href="case-studies.html">Case Studies</a>
+                <a class="nav-link" href="contact.html">Contact</a>
             </nav>
-
-            <a href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1" class="nav-island nav-cta shrink-0 rounded-full bg-accent px-4 py-3 text-sm font-semibold text-white transition hover:bg-ink active:scale-[0.98] sm:px-5">
-                <span class="hidden sm:inline">Book a Growth Audit</span>
-                <span class="sm:hidden">Book Audit</span>
-            </a>
+ 
+            <div class="nav-right">
+ 
+                <a
+                    class="button button-primary nav-cta"
+                    href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Book a Growth Audit
+                </a>
+ 
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+ 
+            </div>
+ 
         </div>
     </header>
-
-    <main>
-        <section class="border-b border-line bg-soft">
-            <div class="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-5 pb-16 pt-32 text-center lg:px-8">
-                <div class="reveal max-w-3xl">
-                    <p class="mb-5 inline-flex rounded-full border border-line bg-white px-4 py-2 text-xs font-semibold uppercase text-muted shadow-sm">
-                        For founder-led trading businesses
-                    </p>
-                    <h1 class="max-w-4xl text-5xl font-semibold leading-[1.04] tracking-normal text-ink md:text-6xl">
-                        Find What's Slowing Your Growth.
+ 
+    <div class="mobile-menu" id="mobile-menu">
+ 
+        <a class="mobile-link" href="#who-we-help">
+            Who We Help
+        </a>
+ 
+        <a class="mobile-link" href="#how-it-works">
+            How It Works
+        </a>
+ 
+        <a class="mobile-link" href="case-studies.html">
+            Case Studies
+        </a>
+ 
+        <a class="mobile-link" href="contact.html">
+            Contact
+        </a>
+ 
+        <a
+            class="button button-primary"
+            href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+            target="_blank"
+            rel="noopener noreferrer">
+            Book a Growth Audit
+        </a>
+ 
+    </div>
+ 
+    <main id="top">
+ 
+        <!-- =========================
+             01 — HERO
+        ========================= -->
+ 
+        <section class="hero" id="hero">
+ 
+            <div class="container">
+ 
+                <div class="hero-content">
+ 
+                    <div class="hero-eyebrow">
+                        Growth Partner for Founder-Led Trading Businesses
+                    </div>
+ 
+                    <h1 aria-label="Turn Trading Demand Into Customers.">
+ 
+                        <span class="line-mask">
+                            <span class="line-inner">
+                                Turn Trading Demand 
+                            </span>
+                        </span>
+ 
+                        <span class="line-mask">
+                            <span class="line-inner">
+                                Into Customers.
+                            </span>
+                        </span>
+ 
                     </h1>
-                    <div class="mx-auto mt-7 max-w-2xl space-y-4 text-lg leading-8 text-muted">
-                        <p>We help trading educators, academies and brokerages acquire better customers, improve conversions and fix what's slowing growth.</p>
-                    </div>
-                    <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-                        <a href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1" class="rounded-full bg-accent px-6 py-4 text-center text-sm font-semibold text-white shadow-subtle transition hover:bg-ink">
+ 
+                    <p class="hero-copy">
+                        ARKVUE helps
+                        <strong>trading educators, academies and brokerages</strong>
+                        identify and fix the bottlenecks across acquisition,
+                        qualification, conversion and activation.
+                    </p>
+ 
+                    <div class="hero-actions">
+ 
+                        <a
+                            class="button button-primary"
+                            href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             Book a Growth Audit
+                            <span class="arr">→</span>
                         </a>
+ 
                     </div>
-                    <div class="mx-auto mt-7 max-w-2xl text-center">
-                        <p class="text-sm italic text-muted">
-                            30-minute working session • No obligation • Leave with clear next steps.
-                        </p>
+ 
+                    <div class="hero-meta">
+ 
+                        <strong>30-minute working session</strong>
+ 
+                        <span class="dot-separator">·</span>
+ 
+                        No obligation
+ 
+                        <span class="dot-separator">·</span>
+ 
+                        Leave with clear next steps.
+ 
                     </div>
+ 
                 </div>
+ 
             </div>
+ 
         </section>
-
-        <section id="who-we-help" class="border-b border-line bg-white py-20">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-                <div class="reveal mx-auto max-w-3xl text-center">
-                    <h2 class="text-4xl font-semibold tracking-normal text-ink">Who We Help</h2>
-                </div>
-                <div class="mt-10 grid gap-5 md:grid-cols-3">
-                    <article class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <span class="text-sm font-semibold text-accent">01</span>
-                        <h3 class="mt-4 text-2xl font-semibold">Trading Educators</h3>
-                        <p class="mt-4 leading-7 text-muted">Grow course enrollments.</p>
-                    </article>
-                    <article class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <span class="text-sm font-semibold text-accent">02</span>
-                        <h3 class="mt-4 text-2xl font-semibold">Trading Academies</h3>
-                        <p class="mt-4 leading-7 text-muted">Improve lead quality and conversions.</p>
-                    </article>
-                    <article class="reveal rounded-lg border border-line bg-white p-6 shadow-subtle">
-                        <span class="text-sm font-semibold text-accent">03</span>
-                        <h3 class="mt-4 text-2xl font-semibold">Brokerages</h3>
-                        <p class="mt-4 leading-7 text-muted">Acquire and activate more funded traders.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="border-b border-line bg-soft py-20">
-            <div class="mx-auto max-w-4xl px-5 text-center lg:px-8">
-                <div class="reveal">
-                    <h2 class="text-4xl font-semibold tracking-normal md:text-5xl">Growth Doesn't Usually Stop Because Of Marketing.</h2>
-                    <h3 class="mx-auto mt-5 max-w-3xl text-2xl  tracking-normal text-ink md:text-3xl">It Stops Because Nobody Knows What To Improve Next.</h3>
-                    <div class="mx-auto mt-8 max-w-2xl space-y-4 text-lg leading-8 text-muted">
-                        <p>Most businesses respond to slow growth by creating more content, running more ads or hiring more people. But if the real bottleneck is somewhere else, those investments rarely solve the problem.</p>
-                        <p>ARKVUE helps founders identify where growth is slowing before investing in the wrong solution.</p>
+ 
+        <!-- =========================
+             02 — THE GROWTH PROBLEM
+        ========================= -->
+ 
+        <section class="section section-soft">
+ 
+            <div class="container">
+ 
+                <div class="section-head reveal">
+ 
+                    <div class="eyebrow">
+                        The Growth Problem
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="border-b border-line bg-white py-20">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-                <div class="reveal rounded-lg border border-line bg-soft p-5 shadow-subtle md:p-8">
-                    <div class="rounded-lg border border-line bg-white p-6 md:p-8">
-                        <h2 class="text-center text-4xl font-semibold tracking-normal text-ink">How It Works</h2>
-
-                        <div class="relative mt-12 grid gap-10 md:grid-cols-3 md:gap-6">
-                            <div class="absolute left-8 top-8 hidden h-px w-[calc(100%-4rem)] bg-line md:block"></div>
-
-                            <article class="relative text-center">
-                                <div class="mx-auto grid h-16 w-16 place-items-center rounded-lg border border-line bg-soft text-lg font-semibold text-accent shadow-subtle">01</div>
-                                <p class="mt-5 text-sm font-semibold uppercase text-accent">Step 1</p>
-                                <h3 class="mt-2 text-2xl font-semibold">Understand</h3>
-                                <p class="mt-4 leading-7 text-muted">We learn how your business acquires customers, converts them and grows today.</p>
-                            </article>
-
-                            <article class="relative text-center">
-                                <div class="mx-auto grid h-16 w-16 place-items-center rounded-lg border border-line bg-soft text-lg font-semibold text-accent shadow-subtle">02</div>
-                                <p class="mt-5 text-sm font-semibold uppercase text-accent">Step 2</p>
-                                <h3 class="mt-2 text-2xl font-semibold">Identify</h3>
-                                <p class="mt-4 leading-7 text-muted">We identify the biggest bottleneck limiting your growth.</p>
-                            </article>
-
-                            <article class="relative text-center">
-                                <div class="mx-auto grid h-16 w-16 place-items-center rounded-lg border border-line bg-soft text-lg font-semibold text-accent shadow-subtle">03</div>
-                                <p class="mt-5 text-sm font-semibold uppercase text-accent">Step 3</p>
-                                <h3 class="mt-2 text-2xl font-semibold">Improve</h3>
-                                <p class="mt-4 leading-7 text-muted">If we're a good fit, we work with your team to improve it.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="border-b border-line bg-soft py-20">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-
-                <div class="reveal mx-auto max-w-3xl text-center">
-                    <h2 class="text-4xl font-semibold tracking-normal">
-                        Outcomes We Focus On
+ 
+                    <h2>
+                        Your audience isn't the problem.
+                        Your growth system might be.
                     </h2>
-                </div>
-
-                <div class="mx-auto mt-12 max-w-2xl space-y-4">
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Better Lead Quality</h3>
-                    </div>
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Higher Conversion</h3>
-                    </div>
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Faster Customer Activation</h3>
-                    </div>
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Better Customer Retention</h3>
-                    </div>
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Clear Growth Priorities</h3>
-                    </div>
-
-                    <div class="reveal flex items-center gap-4 rounded-xl border border-line bg-white px-6 py-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-green-100 font-bold text-green-600">
-                            ✓
-                        </div>
-                        <h3 class="text-lg font-semibold">Better Revenue Efficiency</h3>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <section id="about" class="border-b border-line bg-white py-20">
-            <div class="mx-auto max-w-7xl px-5 lg:px-8">
-                <div class="reveal mx-auto max-w-3xl text-center">
-                    <p class="text-sm font-semibold uppercase text-accent">Meet The Founder</p>
-                </div>
-
-                <div class="mt-12 grid gap-10 lg:grid-cols-[0.4fr_1.0fr]">
-                    <div class="reveal">
-                        <div class="rounded-lg border border-line bg-soft p-3 shadow-subtle">
-                            <img src="favicon/founder.png" alt="Vinayak Girhe" class="aspect-[4/5] w-full rounded-md object-cover">
-                        </div>
-                    </div>
-
-                    <div class="reveal text-lg leading-8 text-muted">
-                        <h3 class="mt-6 text-3xl font-semibold tracking-normal">Vinayak Girhe</h3>
-                        <p class="mt-2 text-muted font-semibold">Founder & CEO, ARKVUE</p>
-                        <br>
-                        <p>After spending hundreds of hours speaking with trading educators, academy owners and brokerage founders, one pattern kept repeating.</p>
-                        <p>Businesses weren't struggling because they lacked effort.</p>
-                        <p>They were struggling because they didn't know what to improve next.</p>
-                        <p>That's why we started ARKVUE.</p>
-                        <p>To help founder-led trading businesses identify what's limiting growth and focus on the improvements that matter most.</p>
-                        <div class="mt-6 flex items-center gap-5 text-xl">
-                            <a href="mailto:vgirhe.work@gmail.com"
-                            class="text-muted transition hover:text-ink"
-                            aria-label="Email">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/in/vinayakgirhe/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-muted transition hover:text-ink"
-                            aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-
-                            <a href="https://www.instagram.com/vinayakgirhe_/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-muted transition hover:text-ink"
-                            aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-
-                            <a href="https://x.com/VinayakGirhe"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-muted transition hover:text-ink"
-                            aria-label="X">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                        </div>
-
-                        <div class="mt-6"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="border-b border-line bg-soft py-20">
-            <div class="mx-auto max-w-4xl px-5 lg:px-8">
-                <div class="reveal text-center">
-                    <h2 class="text-4xl font-semibold tracking-normal">FAQs</h2>
-                </div>
-                <div class="mt-10 divide-y divide-line border-y border-line">
-                    <details class="group py-6" open>
-                        <summary class="cursor-pointer list-none text-lg font-semibold">Who is ARKVUE for?</summary>
-                        <p class="mt-4 leading-7 text-muted">Founder-led trading businesses, including educators, academies and brokerages.</p>
-                    </details>
-                    <details class="group py-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">What is a Growth Audit?</summary>
-                        <p class="mt-4 leading-7 text-muted">A 30-minute working session where we understand your business, identify your biggest growth bottleneck and discuss where to focus next.</p>
-                    </details>
-                    <details class="group py-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">Is this a sales call?</summary>
-                        <p class="mt-4 leading-7 text-muted">No.</p>
-                        <p class="mt-3 leading-7 text-muted">The purpose is to understand your business first.</p>
-                        <p class="mt-3 leading-7 text-muted">If we believe we can genuinely help, we'll explain how.</p>
-                    </details>
-                    <details class="group py-6">
-                        <summary class="cursor-pointer list-none text-lg font-semibold">What happens after the audit?</summary>
-                        <p class="mt-4 leading-7 text-muted">You'll leave with clarity on what's limiting your growth.</p>
-                        <p class="mt-3 leading-7 text-muted">If we're a good fit, we'll outline the next steps.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-white py-20 text-white">
-            <div class="mx-auto max-w-5xl px-5 lg:px-8">
-
-                <div class="reveal rounded-3xl border border-white/10 bg-ink px-12 py-14 text-center shadow-2xl">
-
-                    <h2 class="text-4xl font-semibold tracking-normal">
-                        Every Growing Business Eventually Hits A Ceiling.
-                    </h2>
-
-                    <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/70">
-                        The sooner you identify what's limiting growth, <br>the sooner you can improve it.
-                    </p>
-
-                    <a href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                    class="mt-10 inline-flex rounded-md bg-accent px-6 py-4 text-sm font-semibold text-white transition hover:bg-accentDark">
-                        Book My Growth Audit
-                    </a>
-
-                </div>
-
-            </div>
-        </section> 
-    </main>
-
-    <footer class="border-t border-white/10 bg-ink text-white">
-        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 lg:grid-cols-[1fr_auto] lg:px-8">
-
-            <!-- Left -->
-            <div>
-                <div class="text-lg font-semibold tracking-wide">ARKVUE</div>
-
-                <div class="mt-6 space-y-2 text-sm text-white/70">
-                    <p class="max-w-md leading-7">
-                        Helping founder-led trading businesses grow through better decisions.
-                    </p>
-
-                    <p>Pune, IN</p>
-
+ 
                     <p>
-                        <a class="hover:text-white transition" href="tel:+917666976869">
-                            +91 7666976869
-                        </a>
+                        Trading businesses can have an audience, content,
+                        leads and offers and still struggle to consistently
+                        turn attention into customers, students or active traders.
+                        The problem is often somewhere between acquisition,
+                        qualification, conversion and activation.
                     </p>
+ 
                 </div>
+ 
+                <div class="problem-grid">
+ 
+                    <article class="card problem-card reveal" data-delay="1">
+ 
+                        <div class="card-number">01</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Attention Without Conversion
+                            </h3>
+ 
+                            <p>
+                                <strong>
+                                    You have attention. But it isn't turning into demand.
+                                </strong>
+                                Content can generate views, followers and engagement
+                                without creating a clear path toward an enquiry,
+                                enrollment or purchase.
+                            </p>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <article class="card problem-card reveal" data-delay="2">
+ 
+                        <div class="card-number">02</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Leads Without Qualification
+                            </h3>
+ 
+                            <p>
+                                <strong>
+                                    More leads don't always mean better growth.
+                                </strong>
+                                When there's no structured qualification system,
+                                teams spend time on low-intent prospects while
+                                high-intent opportunities get lost.
+                            </p>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <article class="card problem-card reveal" data-delay="1">
+ 
+                        <div class="card-number">03</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Broken Customer Journeys
+                            </h3>
+ 
+                            <p>
+                                <strong>
+                                    Interest gets lost between the steps.
+                                </strong>
+                                A prospect might move from Instagram to Telegram,
+                                a website to an enquiry, or registration to activation —
+                                but the journey isn't always designed as one connected system.
+                            </p>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <article class="card problem-card reveal" data-delay="2">
+ 
+                        <div class="card-number">04</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Founder-Dependent Growth
+                            </h3>
+ 
+                            <p>
+                                <strong>
+                                    Too much of the process lives in your head.
+                                </strong>
+                                When acquisition, qualification, follow-up and conversion
+                                depend heavily on the founder, growth becomes difficult
+                                to repeat and scale.
+                            </p>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                </div>
+ 
+                <p class="pullquote reveal">
+                    The result?
+                    <span>
+                        You don't necessarily need more traffic.
+                        You need to find where potential customers are being lost
+                        and fix the system around it.
+                    </span>
+                </p>
+ 
             </div>
-
-            <!-- Right -->
-            <div class="justify-self-end text-left">
-                <h3 class="text-lg font-semibold tracking-wide">Connect</h3>
-
-                <ul class="mt-4 space-y-3 text-sm text-white/70">
-                    <li>
-                        <a class="hover:text-white transition"
-                        href="mailto:arkvuebusiness@gmail.com">
-                            arkvuebusiness@gmail.com
+ 
+        </section>
+ 
+      <!-- =========================
+     03 — WHO WE HELP
+========================= -->
+ 
+<section id="who-we-help" class="section">
+ 
+    <div class="container">
+ 
+        <div class="section-head reveal">
+ 
+            <div class="eyebrow">
+                Who We Help
+            </div>
+ 
+            <h2>
+                Built for founder-led trading businesses.
+            </h2>
+ 
+            <p>
+                Different trading businesses have different customer journeys,
+                but the underlying growth problems are often similar.
+            </p>
+ 
+        </div>
+ 
+        <div class="audience-wrap">
+ 
+            <!-- Trading Educators -->
+            <a href="trading-educators.html"
+               class="card audience-card audience-link reveal"
+               data-delay="1"
+               aria-label="Learn more about ARKVUE for Trading Educators">
+ 
+                <div class="audience-card-top">
+ 
+                    <div class="audience-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+ 
+                    <span class="audience-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </span>
+ 
+                </div>
+ 
+                <div class="small-label">
+                    01
+                </div>
+ 
+                <h3>
+                    Trading Educators
+                </h3>
+ 
+                <p>
+                    Turn audience attention into a structured
+                    customer acquisition system.
+                </p>
+ 
+                <p class="audience-for">
+                    For trading creators, mentors and educators
+                    monetizing through courses, mentorships or communities.
+                </p>
+ 
+                <div class="audience-flow">
+ 
+                    <span class="audience-flow-label">
+                        Typical focus
+                    </span>
+ 
+                    Content
+                    <em>→</em>
+                    Leads
+                    <em>→</em>
+                    Qualification
+                    <em>→</em>
+                    Customer
+ 
+                </div>
+ 
+                <span class="audience-learn">
+                    Explore Trading Educators
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+ 
+            </a>
+ 
+ 
+            <!-- Trading Academies -->
+            <a href="trading-academies.html"
+               class="card audience-card audience-link reveal"
+               data-delay="2"
+               aria-label="Learn more about ARKVUE for Trading Academies">
+ 
+                <div class="audience-card-top">
+ 
+                    <div class="audience-icon">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+ 
+                    <span class="audience-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </span>
+ 
+                </div>
+ 
+                <div class="small-label">
+                    02
+                </div>
+ 
+                <h3>
+                    Trading Academies
+                </h3>
+ 
+                <p>
+                    Build a more predictable system for student
+                    acquisition and enrollment.
+                </p>
+ 
+                <p class="audience-for">
+                    For founder-led trading academies looking to improve
+                    qualified student acquisition, enrollment and activation.
+                </p>
+ 
+                <div class="audience-flow">
+ 
+                    <span class="audience-flow-label">
+                        Typical focus
+                    </span>
+ 
+                    Demand
+                    <em>→</em>
+                    Leads
+                    <em>→</em>
+                    Enrollment
+                    <em>→</em>
+                    Activation
+ 
+                </div>
+ 
+                <span class="audience-learn">
+                    Explore Trading Academies
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+ 
+            </a>
+ 
+ 
+            <!-- Brokerages -->
+            <a href="brokerages.html"
+               class="card audience-card audience-link reveal"
+               data-delay="3"
+               aria-label="Learn more about ARKVUE for Brokerages">
+ 
+                <div class="audience-card-top">
+ 
+                    <div class="audience-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+ 
+                    <span class="audience-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </span>
+ 
+                </div>
+ 
+                <div class="small-label">
+                    03
+                </div>
+ 
+                <h3>
+                    Brokerages
+                </h3>
+ 
+                <p>
+                    Acquire and activate more qualified traders.
+                </p>
+ 
+                <p class="audience-for">
+                    For trading, forex and crypto brokerages looking
+                    to improve qualified trader acquisition,
+                    registration and activation.
+                </p>
+ 
+                <div class="audience-flow">
+ 
+                    <span class="audience-flow-label">
+                        Typical focus
+                    </span>
+ 
+                    Demand
+                    <em>→</em>
+                    Leads
+                    <em>→</em>
+                    Qualified Trader
+                    <em>→</em>
+                    Registration
+ 
+                </div>
+ 
+                <span class="audience-learn">
+                    Explore Brokerages
+                    <i class="fa-solid fa-arrow-right"></i>
+                </span>
+ 
+            </a>
+ 
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+        <!-- =========================
+             05 — FIX THE SYSTEMS BEHIND GROWTH
+        ========================= -->
+ 
+        <section class="section">
+ 
+            <div class="container">
+ 
+                <div class="section-head reveal">
+ 
+                    <div class="eyebrow">
+                        Where We Create Leverage
+                    </div>
+ 
+                    <h2>
+                        Fix the Systems Behind Growth.
+                    </h2>
+ 
+                    <p>
+                        We work on the specific systems that move prospects
+                        from attention to meaningful business outcomes —
+                        based on where your growth is actually breaking.
+                    </p>
+ 
+                </div>
+ 
+                <div class="leverage-grid">
+ 
+                    <!-- 01 -->
+ 
+                    <article class="leverage-card reveal" data-delay="1">
+ 
+                        <div class="leverage-number">01</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Positioning &amp; Demand
+                            </h3>
+ 
+                            <strong>
+                                Make the right people pay attention.
+                            </strong>
+ 
+                            <p>
+                                Clarify the business, offer and value proposition
+                                so the right prospects understand why they should care.
+                            </p>
+ 
+                            <em>
+                                <b>Includes:</b>
+                                Positioning · Offer clarity · Differentiation ·
+                                Messaging · Content direction
+                            </em>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <!-- 02 -->
+ 
+                    <article class="leverage-card reveal" data-delay="2">
+ 
+                        <div class="leverage-number">02</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Content &amp; Conversion
+                            </h3>
+ 
+                            <strong>
+                                Turn attention into intent.
+                            </strong>
+ 
+                            <p>
+                                Build content and CTA systems that don't just
+                                generate reach, but create a clear path toward
+                                enquiry, enrollment or purchase.
+                            </p>
+ 
+                            <em>
+                                <b>Includes:</b>
+                                Conversion-led content · Content architecture ·
+                                CTA systems · Conversion messaging ·
+                                Funnels · Landing pages · WhatsApp flows ·
+                                Follow-up systems
+                            </em>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <!-- 03 -->
+ 
+                    <article class="leverage-card reveal" data-delay="3">
+ 
+                        <div class="leverage-number">03</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Lead Gen &amp; Qualification
+                            </h3>
+ 
+                            <strong>
+                                Bring in better opportunities.
+                            </strong>
+ 
+                            <p>
+                                Build acquisition and qualification systems
+                                that help identify prospects with genuine intent.
+                            </p>
+ 
+                            <em>
+                                <b>Includes:</b>
+                                Lead capture · Acquisition flows ·
+                                Qualification systems · Application flows ·
+                                Lead scoring / intent signals
+                            </em>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                    <!-- 04 -->
+ 
+                    <article class="leverage-card reveal" data-delay="4">
+ 
+                        <div class="leverage-number">04</div>
+ 
+                        <div>
+ 
+                            <h3>
+                                Growth Intelligence
+                            </h3>
+ 
+                            <strong>
+                                Know what is actually working.
+                            </strong>
+ 
+                            <p>
+                                Create feedback loops around customer behaviour
+                                and business outcomes so decisions aren't
+                                driven by assumptions.
+                            </p>
+ 
+                            <em>
+                                <b>Includes:</b>
+                                Customer insights · Funnel analysis ·
+                                Conversion tracking · Experimentation ·
+                                Performance feedback loops ·
+                                Activation &amp; community systems
+                            </em>
+ 
+                        </div>
+ 
+                    </article>
+ 
+                </div>
+ 
+                <p class="pullquote reveal">
+ 
+                    You don't need all six.
+                    <span>
+                        We identify the constraint, then focus only on
+                        the systems that can move it.
+                    </span>
+ 
+                </p>
+ 
+            </div>
+ 
+        </section>
+ 
+        <!-- =========================
+             06 — CASE STUDIES
+        ========================= -->
+ 
+        <section class="section section-soft">
+ 
+            <div class="container">
+ 
+                <div class="section-head reveal">
+ 
+                    <div class="eyebrow">
+                        Real Trading Businesses. Real Growth Problems.
+                    </div>
+ 
+                    <h2>
+                        Built Around Problems We've Actually Solved.
+                    </h2>
+ 
+                    <p>
+                        Every engagement starts with a different bottleneck.
+                        Here are examples of how ARKVUE has worked across
+                        trading businesses to improve the systems connecting
+                        attention, demand and customers.
+                    </p>
+ 
+                </div>
+ 
+                <div class="case-card reveal">
+ 
+                    <div class="case-main">
+ 
+                        <span class="case-tag">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Trade.with.UD · Trading Education &amp; Mentorship
+                        </span>
+ 
+                        <h3>
+                            Turning an existing audience into a
+                            structured lead-generation system.
+                        </h3>
+ 
+                        <div class="case-block-label">
+                            30-Day Sprint
+                        </div>
+ 
+                        <p class="case-text">
+                            A trading education business with an existing
+                            audience needed a more structured path from
+                            attention to community and customer demand.
+                        </p>
+ 
+                        <div class="case-cta-row">
+ 
+                            <a
+                                class="button button-primary"
+                                href="case-studies.html">
+                                View Full Case Study
+                                <span class="arr">→</span>
+                            </a>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <div class="case-side">
+ 
+                        <div class="case-side-label">
+                            Result
+                        </div>
+ 
+                        <div class="case-stat">
+ 
+                            <div class="stat-value">
+                                ~50 <em>→</em> ~200
+                            </div>
+ 
+                            <div class="stat-label">
+                                Telegram members during the
+                                30-day sprint
+                            </div>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+        <!-- =========================
+             07 — WHY ARKVUE
+        ========================= -->
+ 
+        <section class="section" id="how-it-works">
+ 
+            <div class="container">
+ 
+                <div class="section-head reveal">
+ 
+                    <div class="eyebrow">
+                        Why ARKVUE
+                    </div>
+ 
+                    <h2>
+                        Built Around the Bottleneck.
+                        Not a Predefined Playbook.
+                    </h2>
+ 
+                    <p>
+                        Most growth engagements start with a service.
+                        ARKVUE starts with the problem.
+                    </p>
+ 
+                    <div class="why-cta-row">
+ 
+                        <a
+                            class="button button-ghost why-cta"
+                            href="case-studies.html">
+                            Read Our Case Studies
+                            <span class="arr">→</span>
                         </a>
-                    </li>
-
-                    <li>
-                        <a class="hover:text-white transition" href=" https://www.linkedin.com/company/arkvue">
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="why-grid">
+ 
+                    <article class="why-card reveal" data-delay="1">
+ 
+                        <div class="card-number">01</div>
+ 
+                        <h3>
+                            Diagnose Before We Prescribe
+                        </h3>
+ 
+                        <strong>
+                            We don't assume we know the problem.
+                        </strong>
+ 
+                        <p>
+                            Before recommending content, campaigns, funnels
+                            or automation, we examine the business and
+                            identify where growth is actually being lost.
+                        </p>
+ 
+                    </article>
+ 
+                    <article class="why-card reveal" data-delay="2">
+ 
+                        <div class="card-number">02</div>
+ 
+                        <h3>
+                            Systems Over Isolated Tactics
+                        </h3>
+ 
+                        <strong>
+                            We connect the pieces.
+                        </strong>
+ 
+                        <p>
+                            Content, acquisition, qualification, sales,
+                            community and onboarding don't operate independently.
+                            We work on the system connecting them.
+                        </p>
+ 
+                    </article>
+ 
+                    <article class="why-card reveal" data-delay="3">
+ 
+                        <div class="card-number">03</div>
+ 
+                        <h3>
+                            Outcomes Over Vanity Metrics
+                        </h3>
+ 
+                        <strong>
+                            Views aren't the finish line.
+                        </strong>
+ 
+                        <p>
+                            We care about metrics closer to the commercial
+                            outcome: qualified enquiries, conversion,
+                            enrollment, registration, activation and retention.
+                        </p>
+ 
+                    </article>
+ 
+                    <article class="why-card reveal" data-delay="4">
+ 
+                        <div class="card-number">04</div>
+ 
+                        <h3>
+                            Built for Trading Businesses
+                        </h3>
+ 
+                        <strong>
+                            We understand the context.
+                        </strong>
+ 
+                        <p>
+                            Trading educators, academies and brokerages
+                            have distinct customer journeys, offers and
+                            acquisition models.
+                        </p>
+ 
+                    </article>
+ 
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+        <!-- =========================
+             08 — MEET THE FOUNDER
+        ========================= -->
+ 
+        <section class="section section-soft">
+ 
+            <div class="container">
+ 
+                <div class="founder-layout">
+ 
+                    <div class="founder-image-shell reveal">
+ 
+                        <img
+                            class="founder-image"
+                            src="favicon/founder.png"
+                            alt="Vinayak Girhe, Founder & CEO of ARKVUE">
+ 
+                    </div>
+ 
+                    <div class="founder-copy reveal" data-delay="1">
+ 
+                        <div class="eyebrow">
+                            Meet the Founder
+                        </div>
+ 
+                        <h2>
+                            Built From the Problem Up.
+                        </h2>
+ 
+                        <p>
+                            ARKVUE was started by Vinayak Girhe after seeing
+                            a recurring problem across founder-led trading
+                            businesses: they could generate attention,
+                            build audiences and create offers, but the
+                            systems connecting that attention to customers
+                            were often fragmented.
+                        </p>
+ 
+                        <p>
+                            Rather than building another marketing agency
+                            around a fixed list of services, he set out to
+                            build a growth partner focused on identifying
+                            the bottleneck and fixing the system behind it.
+                        </p>
+ 
+                        <div class="founder-quote">
+                            The goal isn't to generate more activity.
+                            It's to build a growth system that produces
+                            better outcomes.
+                        </div>
+ 
+                        <div class="founder-sig">
+ 
+                            <strong>
+                                Vinayak Girhe
+                            </strong>
+ 
+                            <span>
+                                Founder &amp; CEO, ARKVUE
+                            </span>
+ 
+                        </div>
+ 
+                        <a
+                            class="text-link"
+                            href="https://www.linkedin.com/company/arkvue"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             LinkedIn
+                            <span class="arr">→</span>
                         </a>
-                    </li>
-
-                    <li>
-                        <a class="hover:text-white transition" href="https://x.com/ARKVUE">
-                            X
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="hover:text-white transition" href="https://www.instagram.com/arkvue.co">
-                            Instagram
-                        </a>
-                    </li>
-                </ul>
+ 
+                    </div>
+ 
+                </div>
+ 
             </div>
-
-        </div>
-
-        <div class="border-t border-white/10 px-5 py-6">
-            <div class="mx-auto max-w-7xl text-center text-sm text-white/60">
-                <p>&copy; 2026 ARKVUE. All rights reserved.</p>
+ 
+        </section>
+ 
+        <!-- =========================
+             09 — SELECTED CLIENTS
+        ========================= -->
+ 
+        <section class="section" style="text-align:center">
+ 
+            <div class="container">
+ 
+                <div
+                    class="section-head reveal"
+                    style="margin-inline:auto">
+ 
+                    <div
+                        class="eyebrow"
+                        style="justify-content:center">
+                        Selected Clients
+                    </div>
+ 
+                    <h2>
+                        Trading Businesses We've Worked With
+                    </h2>
+ 
+                    <p style="margin-inline:auto">
+                        From trading education to brokerages, ARKVUE has
+                        worked alongside founders and teams to solve real
+                        growth and conversion problems.
+                    </p>
+ 
+                </div>
+ 
+                <div class="clients-row reveal" data-delay="1">
+ 
+                    <span class="client-logo">
+                        <i class="fa-solid fa-chart-line"></i>
+                        trade.with.ud
+                    </span>
+ 
+                    <span class="client-logo">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        FiboMarkets
+                    </span>
+ 
+                </div>
+ 
             </div>
+ 
+        </section>
+ 
+                <!-- =========================
+             10 — FAQ
+        ========================= -->
+ 
+        <section class="section section-soft">
+ 
+            <div class="container">
+ 
+                <div class="section-head reveal">
+ 
+                    <div class="eyebrow">
+                        Frequently Asked Questions
+                    </div>
+ 
+                    <h2>
+                        Before We Start
+                    </h2>
+ 
+                </div>
+ 
+                <div class="faq-list">
+ 
+                    <!-- 01 -->
+ 
+                    <div class="faq-item reveal">
+ 
+                        <button
+                            class="faq-question"
+                            type="button">
+ 
+                            <span>
+                                What does ARKVUE actually do?
+                            </span>
+ 
+                            <span class="faq-icon">
+                                +
+                            </span>
+ 
+                        </button>
+ 
+                        <div class="faq-answer">
+ 
+                            ARKVUE is a growth partner for trading businesses.
+                            We identify bottlenecks across acquisition,
+                            qualification, conversion, activation and retention,
+                            then build the systems required to address the
+                            highest-leverage constraint.
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- 02 -->
+ 
+                    <div class="faq-item reveal">
+ 
+                        <button
+                            class="faq-question"
+                            type="button">
+ 
+                            <span>
+                                Who does ARKVUE work with?
+                            </span>
+ 
+                            <span class="faq-icon">
+                                +
+                            </span>
+ 
+                        </button>
+ 
+                        <div class="faq-answer">
+ 
+                            We work with trading educators, trading academies
+                            and trading, forex and crypto brokerages.
+ 
+                            The common thread is a trading business that
+                            already has an offer, audience or acquisition
+                            channel and wants to improve the system turning
+                            that demand into commercial outcomes.
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- 03 -->
+ 
+                    <div class="faq-item reveal">
+ 
+                        <button
+                            class="faq-question"
+                            type="button">
+ 
+                            <span>
+                                Do you have fixed packages?
+                            </span>
+ 
+                            <span class="faq-icon">
+                                +
+                            </span>
+ 
+                        </button>
+ 
+                        <div class="faq-answer">
+ 
+                            We don't believe every trading business needs
+                            the same intervention. The scope depends on
+                            the bottleneck we identify.
+ 
+                            If we believe a specific problem can be solved
+                            without a broader engagement, we'll tell you.
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- 04 -->
+ 
+                    <div class="faq-item reveal">
+ 
+                        <button
+                            class="faq-question"
+                            type="button">
+ 
+                            <span>
+                                How long does an engagement typically take?
+                            </span>
+ 
+                            <span class="faq-icon">
+                                +
+                            </span>
+ 
+                        </button>
+ 
+                        <div class="faq-answer">
+ 
+                            It depends on the problem and scope.
+ 
+                            Some problems can be addressed through a focused
+                            sprint, while more complex growth systems require
+                            longer-term implementation and iteration.
+ 
+                            We'll define the scope and expected outcomes
+                            before starting.
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- 05 -->
+ 
+                    <div class="faq-item reveal">
+ 
+                        <button
+                            class="faq-question"
+                            type="button">
+ 
+                            <span>
+                                What if ARKVUE isn't the right fit for my business?
+                            </span>
+ 
+                            <span class="faq-icon">
+                                +
+                            </span>
+ 
+                        </button>
+ 
+                        <div class="faq-answer">
+ 
+                            We'll tell you.
+ 
+                            The Growth Audit is designed to determine whether
+                            there is a meaningful problem we can solve.
+                            If we don't believe ARKVUE is the right partner,
+                            we won't recommend an engagement simply to
+                            make a sale.
+ 
+                        </div>
+ 
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+        <!-- =========================
+             11 — FINAL CTA
+        ========================= -->
+ 
+        <section class="final-cta">
+ 
+            <div class="final-cta-glow" aria-hidden="true"></div>
+ 
+            <div class="container">
+ 
+                <div
+                    class="eyebrow reveal"
+                    style="justify-content:center">
+ 
+                    Ready to Find the Bottleneck?
+ 
+                </div>
+ 
+                <h2 class="reveal" data-delay="1">
+                    Find What's Holding Your Growth Back.
+                </h2>
+ 
+                <p class="reveal" data-delay="2">
+ 
+                    Book a 30-minute Growth Audit.
+                    We'll examine where your customer journey is breaking
+                    and identify the highest-leverage next step.
+ 
+                </p>
+ 
+                <div class="final-actions reveal" data-delay="3">
+ 
+                    <a
+                        class="button button-primary"
+                        href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+ 
+                        Book a Growth Audit
+ 
+                        <span class="arr">→</span>
+ 
+                    </a>
+ 
+                    <a
+                        class="button button-ghost"
+                        href="contact.html">
+ 
+                        Contact Us
+ 
+                    </a>
+ 
+                </div>
+ 
+                <div class="final-meta reveal" data-delay="4">
+ 
+                    <strong>
+                        30-minute working session
+                    </strong>
+ 
+                    <span class="dot-separator">
+                        ·
+                    </span>
+ 
+                    No obligation.
+ 
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+    </main>
+ 
+    <!-- =========================
+         FOOTER
+    ========================= -->
+ 
+    <footer>
+ 
+        <div class="container">
+ 
+            <div class="footer-top">
+ 
+                <div class="footer-brand">
+ 
+                    <a href="#top" class="brand">
+ 
+                        <img
+                            class="brand-mark"
+                            src="/favicon/A.svg"
+                            alt="ARKVUE logo">
+ 
+                        <span>
+                            ARKVUE
+                        </span>
+ 
+                    </a>
+ 
+                    <p>
+                        Growth partner for founder-led trading businesses.
+                        We diagnose the bottleneck, then build the system around it.
+                    </p>
+ 
+                    <div class="footer-social">
+ 
+                        <a
+                            href="https://www.linkedin.com/company/arkvue"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+ 
+                            <i class="fa-brands fa-linkedin-in"></i>
+ 
+                        </a>
+ 
+                        <a
+                            href="https://www.instagram.com/arkvue.co"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram">
+ 
+                            <i class="fa-brands fa-instagram"></i>
+ 
+                        </a>
+ 
+                        <a
+                            href="https://x.com/ARKVUE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="X">
+ 
+                            <i class="fa-brands fa-x-twitter"></i>
+ 
+                        </a>
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="footer-col">
+ 
+                    <h4>
+                        Company
+                    </h4>
+ 
+                    <ul>
+ 
+                        <li>
+                            <a href="#who-we-help">
+                                Who We Help
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="#how-it-works">
+                                How It Works
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="case-studies.html">
+                                Case Studies
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+ 
+                    </ul>
+ 
+                </div>
+ 
+                <div class="footer-col">
+ 
+                    <h4>
+                        Audiences
+                    </h4>
+ 
+                    <ul>
+ 
+                        <li>
+                            <a href="trading-educators.html">
+                                Trading Educators
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="trading-academies.html">
+                                Trading Academies
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="brokerages.html">
+                                Brokerages
+                            </a>
+                        </li>
+ 
+                    </ul>
+ 
+                </div>
+ 
+                <div class="footer-col">
+ 
+                    <h4>
+                        Get in touch
+                    </h4>
+ 
+                    <ul>
+ 
+                        <li>
+                            <a href="mailto:arkvuebusiness@gmail.com">
+                                arkvuebusiness@gmail.com
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a href="tel:+917666976869">
+                                +91 76669 76869
+                            </a>
+                        </li>
+ 
+                        <li>
+                            <a
+                                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+                                target="_blank"
+                                rel="noopener noreferrer">
+ 
+                                Book a Growth Audit
+ 
+                            </a>
+                        </li>
+ 
+                    </ul>
+ 
+                </div>
+ 
+            </div>
+ 
+            <div
+                class="footer-wordmark"
+                aria-hidden="true">
+ 
+                ARKVUE
+ 
+            </div>
+ 
+            <div class="footer-bottom">
+ 
+                <div>
+                    © 2026 ARKVUE. All rights reserved.
+                </div>
+ 
+                <div>
+                    <a href="#top">
+                        Back to top ↑
+                    </a>
+                </div>
+ 
+            </div>
+ 
         </div>
+ 
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script>
-        window.addEventListener("DOMContentLoaded", function () {
-            if (!window.gsap || !window.ScrollTrigger) {
-                return;
+ 
+    <style>
+        /* =========================
+           GROWTH SYSTEM
+        ========================= */
+ 
+        .system-flow {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 46px;
+            color: var(--muted);
+            font-size: .82rem;
+            font-weight: 600;
+        }
+ 
+        .flow-step {
+            padding: 8px 14px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--white);
+            transition:
+                border-color .25s ease,
+                color .25s ease,
+                transform .3s ease;
+        }
+ 
+        .flow-step:hover {
+            border-color: var(--accent);
+            color: var(--ink);
+            transform: translateY(-2px);
+        }
+ 
+        .flow-arrow {
+            color: var(--accent);
+            font-weight: 700;
+        }
+ 
+        .five-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+            margin-top: 48px;
+        }
+ 
+        .mini-card {
+            padding: 24px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: var(--white);
+            transition:
+                transform .4s cubic-bezier(.16,1,.3,1),
+                border-color .3s ease,
+                box-shadow .4s ease;
+        }
+ 
+        .mini-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(31,111,235,.3);
+            box-shadow: 0 22px 44px rgba(23,32,51,.08);
+        }
+ 
+        .mini-card h3 {
+            margin-top: 22px;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+ 
+        .mini-card strong {
+            display: block;
+            margin-top: 10px;
+            color: var(--accent);
+            font-size: .8rem;
+            line-height: 1.45;
+        }
+ 
+        .mini-card p {
+            margin-top: 9px;
+            color: var(--muted);
+            font-size: .84rem;
+            line-height: 1.6;
+        }
+ 
+        /* =========================
+           LEVERAGE
+        ========================= */
+ 
+        .leverage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 56px;
+        }
+ 
+        .leverage-card {
+            display: flex;
+            gap: 15px;
+            padding: 26px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: var(--white);
+            transition:
+                transform .4s cubic-bezier(.16,1,.3,1),
+                border-color .3s ease,
+                box-shadow .4s ease;
+        }
+ 
+        .leverage-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(31,111,235,.3);
+            box-shadow: 0 22px 44px rgba(23,32,51,.08);
+        }
+ 
+        .leverage-number {
+            display: grid;
+            flex: 0 0 auto;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            border-radius: 10px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: .72rem;
+            font-weight: 700;
+        }
+ 
+        .leverage-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+ 
+        .leverage-card strong {
+            display: block;
+            margin-top: 6px;
+            color: var(--accent);
+            font-size: .78rem;
+            line-height: 1.4;
+        }
+ 
+        .leverage-card p {
+            margin-top: 8px;
+            color: var(--muted);
+            font-size: .86rem;
+            line-height: 1.6;
+        }
+ 
+        .leverage-card em {
+            display: block;
+            margin-top: 13px;
+            color: #8a93a3;
+            font-size: .72rem;
+            font-style: normal;
+            line-height: 1.65;
+        }
+ 
+        .leverage-card em b {
+            color: var(--muted);
+        }
+ 
+        /* =========================
+           CASE STUDY
+        ========================= */
+ 
+        .case-card {
+            display: grid;
+            grid-template-columns: 1.25fr .75fr;
+            margin-top: 54px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            background: var(--white);
+            box-shadow: var(--shadow-small);
+        }
+ 
+        .case-main {
+            padding: 42px;
+        }
+ 
+        .case-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+ 
+        .case-main h3 {
+            margin-top: 16px;
+            font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+ 
+        .case-block-label {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+ 
+        .case-main p.case-text {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: .94rem;
+            line-height: 1.7;
+        }
+ 
+        .case-cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 30px;
+        }
+ 
+        .case-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 42px 34px;
+            background: var(--ink);
+            color: var(--white);
+        }
+ 
+        .case-side-label {
+            color: rgba(255,255,255,.5);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+ 
+        .case-stat {
+            padding-top: 18px;
+            border-top: 1px solid rgba(255,255,255,.12);
+        }
+ 
+        .stat-value {
+            font-size: clamp(1.7rem, 3vw, 2.3rem);
+            font-weight: 700;
+        }
+ 
+        .stat-value em {
+            color: #7aa7f0;
+            font-style: normal;
+        }
+ 
+        .stat-label {
+            margin-top: 5px;
+            color: rgba(255,255,255,.6);
+            font-size: .8rem;
+            line-height: 1.5;
+        }
+ 
+        /* =========================
+           WHY
+        ========================= */
+ 
+        #how-it-works .section-head p {
+            color: #454e60;
+        }
+ 
+        .why-cta-row {
+            margin-top: 26px;
+        }
+ 
+        .why-cta {
+            padding: 12px 20px;
+        }
+ 
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 56px;
+        }
+ 
+        .why-card {
+            padding: 28px;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            background: var(--white);
+            transition:
+                transform .4s cubic-bezier(.16,1,.3,1),
+                border-color .3s ease,
+                box-shadow .4s ease;
+        }
+ 
+        .why-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(31,111,235,.3);
+            box-shadow: 0 22px 44px rgba(23,32,51,.1);
+        }
+ 
+        .why-card h3 {
+            margin-top: 22px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+ 
+        .why-card strong {
+            display: block;
+            margin-top: 8px;
+            color: var(--accent-dark);
+            font-size: .8rem;
+        }
+ 
+        .why-card p {
+            margin-top: 10px;
+            color: #454e60;
+            font-size: .9rem;
+            line-height: 1.6;
+        }
+ 
+        /* =========================
+           FOUNDER
+        ========================= */
+ 
+        .founder-layout {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            align-items: center;
+            gap: 64px;
+        }
+ 
+        .founder-image-shell {
+            width: min(100%, 380px);
+            aspect-ratio: 4 / 5;
+            margin-inline: auto;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 26px;
+            background: var(--soft);
+            box-shadow: var(--shadow);
+        }
+ 
+        .founder-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s cubic-bezier(.16,1,.3,1);
+        }
+ 
+        .founder-image-shell:hover .founder-image {
+            transform: scale(1.05);
+        }
+ 
+        .founder-copy h2 {
+            margin-top: 16px;
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+ 
+        .founder-copy p {
+            margin-top: 20px;
+            color: var(--muted);
+            font-size: .98rem;
+            line-height: 1.75;
+        }
+ 
+        .founder-quote {
+            margin-top: 26px;
+            border-left: 2px solid var(--accent);
+            padding-left: 18px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+ 
+        .founder-sig {
+            margin-top: 24px;
+        }
+ 
+        .founder-sig strong {
+            display: block;
+            font-size: .95rem;
+        }
+ 
+        .founder-sig span {
+            display: block;
+            margin-top: 3px;
+            color: var(--muted);
+            font-size: .82rem;
+        }
+ 
+        .founder-copy .text-link {
+            margin-top: 20px;
+        }
+ 
+        /* =========================
+           CLIENTS
+        ========================= */
+ 
+        .clients-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 50px;
+        }
+ 
+        .client-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            background: var(--white);
+            padding: 22px 38px;
+            box-shadow: var(--shadow-small);
+            color: var(--ink);
+            font-size: 1.15rem;
+            font-weight: 700;
+            transition:
+                transform .35s cubic-bezier(.16,1,.3,1),
+                border-color .3s ease,
+                box-shadow .35s ease;
+        }
+ 
+        .client-logo:hover {
+            transform: translateY(-4px);
+            border-color: rgba(31,111,235,.35);
+            box-shadow: 0 20px 40px rgba(23,32,51,.08);
+        }
+ 
+        .client-logo i {
+            color: var(--accent);
+        }
+ 
+        /* =========================
+           FAQ
+        ========================= */
+ 
+        .faq-list {
+            max-width: 880px;
+            margin-top: 52px;
+            border-top: 1px solid var(--line);
+        }
+ 
+        .faq-item {
+            border-bottom: 1px solid var(--line);
+            padding: 24px 0;
+        }
+ 
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            width: 100%;
+            border: 0;
+            background: transparent;
+            color: var(--ink);
+            text-align: left;
+            font-size: 1.02rem;
+            font-weight: 700;
+        }
+ 
+        .faq-icon {
+            display: grid;
+            flex: 0 0 auto;
+            width: 32px;
+            height: 32px;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--soft);
+            color: var(--muted);
+            font-size: 1.2rem;
+            transition:
+                transform .3s ease,
+                background .25s ease,
+                color .25s ease;
+        }
+ 
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+            background: var(--accent);
+            color: white;
+        }
+ 
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            color: var(--muted);
+            font-size: .94rem;
+            line-height: 1.75;
+            max-width: 780px;
+            transition:
+                max-height .45s ease,
+                padding-top .3s ease;
+        }
+ 
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+            padding-top: 14px;
+        }
+ 
+        /* =========================
+           FINAL CTA
+        ========================= */
+ 
+        .final-cta {
+            position: relative;
+            padding: 64px 0;
+            text-align: center;
+            border-top: 1px solid var(--ink);
+            background:
+                radial-gradient(60% 100% at 50% 0%, rgba(90,150,255,.18), transparent 70%),
+                var(--ink);
+            overflow: hidden;
+        }
+ 
+        .final-cta-glow {
+            position: absolute;
+            top: -220px;
+            left: 50%;
+            width: 720px;
+            height: 420px;
+            transform: translateX(-50%);
+            background: radial-gradient(closest-side, rgba(90,150,255,.32), transparent 72%);
+            filter: blur(10px);
+            pointer-events: none;
+        }
+ 
+        .final-cta .container {
+            position: relative;
+        }
+ 
+        .final-cta .eyebrow {
+            justify-content: center;
+            color: #9cc0ff;
+            background: rgba(255,255,255,.06);
+            border: 1px solid rgba(255,255,255,.14);
+            border-radius: 999px;
+            padding: 8px 16px;
+            display: inline-flex;
+            box-shadow: none;
+        }
+ 
+        .final-cta .eyebrow::before {
+            background: #9cc0ff;
+        }
+ 
+        .final-cta h2 {
+            max-width: 820px;
+            margin: 20px auto 0;
+            font-size: clamp(2rem, 5.5vw, 3.6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--white);
+        }
+ 
+        .final-cta p {
+            max-width: 540px;
+            margin: 22px auto 0;
+            color: rgba(255,255,255,.68);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+ 
+        .final-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 36px;
+        }
+ 
+        .final-cta .button-ghost {
+            background: transparent;
+            color: var(--white);
+            border: 1px solid rgba(255,255,255,.24);
+        }
+ 
+        .final-cta .button-ghost:hover {
+            background: rgba(255,255,255,.06);
+            border-color: rgba(255,255,255,.4);
+        }
+ 
+        .final-meta {
+            margin-top: 22px;
+            color: rgba(255,255,255,.55);
+            font-size: .8rem;
+        }
+ 
+        .final-meta strong {
+            color: var(--white);
+        }
+ 
+        .final-cta .dot-separator {
+            color: rgba(255,255,255,.25);
+        }
+ 
+        /* =========================
+           FOOTER
+        ========================= */
+ 
+        footer {
+            border-top: 1px solid var(--line);
+            background: var(--soft);
+            padding: 80px 0 36px;
+        }
+ 
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+ 
+        .footer-brand .brand {
+            font-size: 1.15rem;
+        }
+ 
+        .footer-brand p {
+            margin-top: 18px;
+            max-width: 280px;
+            color: var(--muted);
+            font-size: .9rem;
+            line-height: 1.65;
+        }
+ 
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 22px;
+        }
+ 
+        .footer-social a {
+            display: grid;
+            width: 40px;
+            height: 40px;
+            place-items: center;
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            color: var(--muted);
+            background: var(--white);
+            transition:
+                color .25s ease,
+                border-color .25s ease,
+                transform .3s ease;
+        }
+ 
+        .footer-social a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+ 
+        .footer-col h4 {
+            font-size: .75rem;
+            font-weight: 700;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+ 
+        .footer-col ul {
+            list-style: none;
+            margin-top: 18px;
+            display: grid;
+            gap: 13px;
+        }
+ 
+        .footer-col a {
+            color: var(--ink);
+            font-size: .9rem;
+            font-weight: 500;
+            transition: color .2s ease;
+        }
+ 
+        .footer-col a:hover {
+            color: var(--accent);
+        }
+ 
+        .footer-wordmark {
+            display: none !important;
+            font-size: clamp(3rem, 16vw, 12rem);
+            font-weight: 700;
+            letter-spacing: -.02em;
+            line-height: .9;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(23,32,51,.1);
+            margin-top: 60px;
+            user-select: none;
+            overflow: hidden;
+        }
+ 
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 64px;
+            padding-top: 28px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .8rem;
+        }
+ 
+        /* =========================
+           RESPONSIVE
+        ========================= */
+ 
+        @media (max-width: 1100px) {
+ 
+            .desktop-nav {
+                gap: 20px;
             }
-
-            gsap.registerPlugin(ScrollTrigger);
-
-            gsap.utils.toArray(".reveal").forEach(function (item) {
-                gsap.from(item, {
-                    opacity: 0,
-                    y: 16,
-                    duration: 0.55,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: item,
-                        start: "top 88%",
-                        once: true
-                    }
+ 
+            .navbar {
+                padding-inline: 24px;
+            }
+ 
+            .five-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+ 
+            .audience-wrap {
+                grid-template-columns: 1fr;
+            }
+ 
+            .audience-card {
+                min-height: auto;
+            }
+ 
+            .founder-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+ 
+            .founder-image-shell {
+                width: min(100%, 330px);
+            }
+ 
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+            }
+ 
+        }
+ 
+        @media (max-width: 900px) {
+ 
+            .desktop-nav {
+                display: none;
+            }
+ 
+            .nav-cta {
+                display: none;
+            }
+ 
+            .menu-toggle {
+                display: grid;
+                place-items: center;
+            }
+ 
+            .navbar {
+                padding: 14px 20px;
+            }
+ 
+            .problem-grid,
+            .why-grid,
+            .leverage-grid {
+                grid-template-columns: 1fr;
+            }
+ 
+            .case-card {
+                grid-template-columns: 1fr;
+            }
+ 
+            .case-side {
+                padding: 32px;
+            }
+ 
+        }
+ 
+        @media (max-width: 768px) {
+ 
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+ 
+        }
+ 
+        @media (max-width: 760px) {
+ 
+            .container {
+                width: min(100% - 32px, 1160px);
+            }
+ 
+            .section {
+                padding: 32px 0;
+            }
+ 
+            .hero {
+                min-height: auto;
+                padding: 140px 0 80px;
+            }
+ 
+            .hero h1 {
+                font-size: clamp(2.2rem, 12vw, 3.4rem);
+            }
+ 
+            .hero-eyebrow {
+                font-size: .6rem;
+                letter-spacing: .09em;
+            }
+ 
+            .problem-grid,
+            .why-grid,
+            .leverage-grid {
+                grid-template-columns: 1fr;
+            }
+ 
+            .five-grid {
+                grid-template-columns: 1fr;
+            }
+ 
+            .problem-card,
+            .leverage-card {
+                padding: 24px;
+            }
+ 
+            .case-main {
+                padding: 28px;
+            }
+ 
+            .case-side {
+                padding: 30px 28px;
+            }
+ 
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 34px;
+            }
+ 
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+ 
+            .final-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+ 
+            .final-actions .button {
+                width: 100%;
+            }
+ 
+        }
+ 
+        @media (max-width: 560px) {
+ 
+            .system-flow {
+                justify-content: flex-start;
+            }
+ 
+            .flow-arrow {
+                display: none;
+            }
+ 
+            .hero-meta {
+                line-height: 1.8;
+            }
+ 
+            .dot-separator {
+                margin-inline: 5px;
+            }
+ 
+            .clients-row {
+                flex-direction: column;
+            }
+ 
+            .client-logo {
+                justify-content: center;
+            }
+ 
+        }
+ 
+        @media (prefers-reduced-motion: reduce) {
+ 
+            html {
+                scroll-behavior: auto;
+            }
+ 
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important;
+            }
+ 
+            .reveal,
+            .line-inner,
+            .hero-copy,
+            .hero-actions,
+            .hero-meta {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+ 
+        }
+    </style>
+ 
+    <script>
+ 
+        /* =========================
+           SMOOTH ANCHOR SCROLLING
+        ========================= */
+ 
+        const reduceMotion =
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+ 
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+ 
+            link.addEventListener("click", (e) => {
+ 
+                const id = link.getAttribute("href");
+ 
+                if (!id || id === "#") return;
+ 
+                const target = document.querySelector(id);
+ 
+                if (!target) return;
+ 
+                e.preventDefault();
+ 
+                target.scrollIntoView({
+                    behavior: reduceMotion ? "auto" : "smooth",
+                    block: "start"
                 });
+ 
+                history.pushState(null, "", id);
+ 
             });
+ 
         });
+ 
+ 
+        /* =========================
+           HERO REVEAL
+        ========================= */
+ 
+        requestAnimationFrame(() => {
+ 
+            requestAnimationFrame(() => {
+ 
+                document
+                    .getElementById("hero")
+                    .classList.add("hero-ready");
+ 
+            });
+ 
+        });
+ 
+ 
+        /* =========================
+           NAVBAR SCROLL STATE
+        ========================= */
+ 
+        const navbar =
+            document.getElementById("navbar");
+ 
+        window.addEventListener(
+            "scroll",
+            () => {
+ 
+                navbar.classList.toggle(
+                    "scrolled",
+                    window.scrollY > 20
+                );
+ 
+            },
+            { passive: true }
+        );
+ 
+ 
+        /* =========================
+           MOBILE MENU
+        ========================= */
+ 
+        const menuToggle =
+            document.getElementById("menu-toggle");
+ 
+        const mobileMenu =
+            document.getElementById("mobile-menu");
+ 
+        menuToggle.addEventListener(
+            "click",
+            () => {
+ 
+                const isOpen =
+                    mobileMenu.classList.toggle("open");
+ 
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    String(isOpen)
+                );
+ 
+                menuToggle.innerHTML = isOpen
+                    ? '<i class="fa-solid fa-xmark"></i>'
+                    : '<i class="fa-solid fa-bars"></i>';
+ 
+            }
+        );
+ 
+ 
+        mobileMenu
+            .querySelectorAll("a")
+            .forEach((link) => {
+ 
+                link.addEventListener(
+                    "click",
+                    () => {
+ 
+                        mobileMenu.classList.remove("open");
+ 
+                        menuToggle.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+ 
+                        menuToggle.innerHTML =
+                            '<i class="fa-solid fa-bars"></i>';
+ 
+                    }
+                );
+ 
+            });
+ 
+ 
+        /* =========================
+           SCROLL REVEAL
+        ========================= */
+ 
+        const observer =
+            new IntersectionObserver(
+                (entries, obs) => {
+ 
+                    entries.forEach((entry) => {
+ 
+                        if (entry.isIntersecting) {
+ 
+                            entry.target.classList.add("in");
+ 
+                            obs.unobserve(entry.target);
+ 
+                        }
+ 
+                    });
+ 
+                },
+                {
+                    threshold: 0.14,
+                    rootMargin: "0px 0px -40px 0px"
+                }
+            );
+ 
+        document
+            .querySelectorAll(".reveal")
+            .forEach((element) => {
+ 
+                observer.observe(element);
+ 
+            });
+ 
+ 
+        /* =========================
+           FAQ ACCORDION
+        ========================= */
+ 
+        document
+            .querySelectorAll(".faq-question")
+            .forEach((button) => {
+ 
+                button.addEventListener(
+                    "click",
+                    () => {
+ 
+                        const item =
+                            button.closest(".faq-item");
+ 
+                        const isOpen =
+                            item.classList.contains("open");
+ 
+                        document
+                            .querySelectorAll(".faq-item")
+                            .forEach((faq) => {
+ 
+                                faq.classList.remove("open");
+ 
+                            });
+ 
+                        if (!isOpen) {
+                            item.classList.add("open");
+                        }
+ 
+                    }
+                );
+ 
+            });
+ 
     </script>
+ 
 </body>
 </html>
