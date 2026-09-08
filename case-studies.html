@@ -24,9 +24,8 @@
   href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap"
   rel="stylesheet"
 >
- 
-<style>
- 
+ <style>
+
   :root {
     --bg: #FFFFFF;
     --text: #111111;
@@ -40,17 +39,17 @@
     --dark-text: #FFFFFF;
     --dark-text-muted: #A3A7B0;
   }
- 
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
- 
+
   html {
     scroll-behavior: smooth;
   }
- 
+
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
       Helvetica, Arial, sans-serif;
@@ -59,27 +58,27 @@
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
   }
- 
+
   a {
     text-decoration: none;
     color: inherit;
   }
- 
+
   ul {
     list-style: none;
   }
- 
+
   .wrap {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 40px;
   }
- 
- 
+
+
   /* =========================================================
      HEADER
      ========================================================= */
- 
+
   header {
     border-bottom: 1px solid var(--border);
     position: sticky;
@@ -87,7 +86,7 @@
     background: var(--bg);
     z-index: 100;
   }
- 
+
   .nav {
     display: flex;
     align-items: center;
@@ -97,37 +96,37 @@
     margin: 0 auto;
     position: relative;
   }
- 
+
   .logo {
     font-size: 19px;
     font-weight: 700;
     letter-spacing: 0.3px;
     flex-shrink: 0;
   }
- 
+
   .nav-links {
     display: flex;
     gap: 36px;
   }
- 
+
   .nav-links a {
     font-size: 15px;
     font-weight: 500;
     color: var(--text-muted);
     transition: color 0.15s ease;
   }
- 
+
   .nav-links a:hover,
   .nav-links a:focus-visible {
     color: var(--text);
   }
- 
+
   .nav-menu {
     display: flex;
     align-items: center;
     gap: 36px;
   }
- 
+
   .nav-toggle {
     display: none;
     background: none;
@@ -139,7 +138,7 @@
     align-items: center;
     gap: 5px;
   }
- 
+
   .nav-toggle span {
     display: block;
     width: 22px;
@@ -147,12 +146,12 @@
     background: var(--text);
     border-radius: 2px;
   }
- 
- 
+
+
   /* =========================================================
      BUTTONS
      ========================================================= */
- 
+
   .btn {
     display: inline-flex;
     align-items: center;
@@ -167,47 +166,47 @@
       border-color 0.15s ease,
       color 0.15s ease;
   }
- 
+
   .btn-outline {
     color: var(--blue);
     border: 1.5px solid var(--blue);
     background: transparent;
   }
- 
+
   .btn-outline:hover,
   .btn-outline:focus-visible {
     background: #EFF3FE;
   }
- 
+
   .btn-solid {
     color: #FFFFFF;
     background: var(--blue);
     border: 1.5px solid var(--blue);
   }
- 
+
   .btn-solid:hover,
   .btn-solid:focus-visible {
     background: var(--blue-hover);
     border-color: var(--blue-hover);
   }
- 
+
   .link-blue {
     color: var(--blue);
     font-weight: 600;
     font-size: 15px;
     transition: color 0.15s ease;
   }
- 
+
   .link-blue:hover,
   .link-blue:focus-visible {
     color: var(--blue-hover);
   }
- 
- 
+
+
   /* =========================================================
      TYPOGRAPHY
      ========================================================= */
- 
+
   .eyebrow {
     color: var(--blue);
     font-size: 13px;
@@ -215,7 +214,7 @@
     letter-spacing: 0.06em;
     margin-bottom: 22px;
   }
- 
+
   .section-label {
     font-size: 13px;
     font-weight: 600;
@@ -223,7 +222,7 @@
     color: var(--text-faint);
     margin-bottom: 18px;
   }
- 
+
   h1 {
     font-size: 56px;
     line-height: 1.1;
@@ -232,7 +231,7 @@
     color: var(--text);
     margin-bottom: 24px;
   }
- 
+
   h2 {
     font-size: 42px;
     font-weight: 600;
@@ -240,7 +239,7 @@
     line-height: 1.15;
     color: var(--text);
   }
- 
+
   .lede {
     font-size: 16px;
     line-height: 1.6;
@@ -248,41 +247,42 @@
     color: var(--text-muted);
     max-width: 480px;
   }
- 
+
   .fine-print {
     font-size: 14px;
     font-weight: 450;
     color: var(--text-faint);
   }
- 
- 
+
+
   /* =========================================================
      PAGE HERO
      ========================================================= */
- 
+
   .page-hero {
-  padding: 88px 0 220px;
-}
+    padding: 88px 0 220px;
+  }
+
   .page-hero-inner {
     max-width: 700px;
   }
- 
+
   .page-hero .lede {
     max-width: 560px;
     margin-bottom: 20px;
     font-size: 17px;
   }
- 
- 
+
+
   /* =========================================================
      FEATURED CASE STUDY
      ========================================================= */
- 
+
   .featured-case {
     background: var(--grey);
     padding: 68px 0 88px;
   }
- 
+
   .featured-case-grid {
     display: grid;
     grid-template-columns: 1.15fr 1fr;
@@ -291,51 +291,51 @@
     overflow: hidden;
     background: var(--bg);
   }
- 
+
   .featured-case-main,
   .featured-case-stats {
     padding: 40px;
   }
- 
+
   .featured-case-main {
     border-right: 1px solid var(--border);
   }
- 
+
   .case-identity {
     display: flex;
     align-items: flex-start;
     gap: 14px;
     margin-bottom: 26px;
   }
- 
- .mark {
-  width: 44px;
-  height: 44px;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-  overflow: hidden;
-  box-shadow: inset 0 0 0 2px #FFFFFF;
-  border: none;
-  outline: none;
-}
- 
- .mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-}
- 
+
+  .mark {
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 2px #FFFFFF;
+    border: none;
+    outline: none;
+  }
+
+  .mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+  }
+
   .mark span.fallback {
     display: none;
     width: 100%;
@@ -343,25 +343,25 @@
     align-items: center;
     justify-content: center;
   }
- 
+
   .mark-ud,
   .mark-fm,
   .mark-pt {
     background: var(--text);
   }
- 
+
   .case-identity-name {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 3px;
   }
- 
+
   .case-identity-role {
     font-size: 14px;
     font-weight: 450;
     color: var(--text-faint);
   }
- 
+
   .featured-case-main h3 {
     font-size: 30px;
     font-weight: 550;
@@ -370,7 +370,7 @@
     color: var(--text);
     margin-bottom: 16px;
   }
- 
+
   .featured-case-main p {
     font-size: 15px;
     font-weight: 450;
@@ -379,7 +379,7 @@
     max-width: 420px;
     margin-bottom: 26px;
   }
- 
+
   .case-tag {
     font-size: 12px;
     font-weight: 600;
@@ -389,20 +389,20 @@
     border-bottom: 1px solid var(--border);
     margin-bottom: 26px;
   }
- 
+
   .stat-block {
     margin-bottom: 26px;
   }
- 
+
   .stat-block:last-child {
     margin-bottom: 0;
   }
- 
+
   .stat-block.divider {
     padding-top: 26px;
     border-top: 1px solid var(--border);
   }
- 
+
   .stat-number {
     font-size: 40px;
     font-weight: 700;
@@ -410,49 +410,49 @@
     line-height: 1.1;
     margin-bottom: 10px;
   }
- 
+
   .stat-number.big {
     font-size: 54px;
   }
- 
+
   .stat-number.dark {
     color: var(--text);
   }
- 
+
   .stat-number .unit {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.04em;
     margin-left: 4px;
   }
- 
+
   .stat-label {
     font-size: 15px;
     font-weight: 450;
     margin-bottom: 3px;
   }
- 
+
   .stat-sub {
     font-size: 13px;
     font-weight: 450;
     color: var(--text-faint);
   }
- 
- 
+
+
   /* =========================================================
      SECONDARY CASE STUDIES
      ========================================================= */
- 
+
   .secondary-cases {
     padding: 88px 0;
   }
- 
+
   .secondary-case-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
- 
+
   .mini-case-card {
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -463,13 +463,13 @@
       transform 0.18s ease,
       box-shadow 0.18s ease;
   }
- 
+
   .mini-case-card:hover {
     background-color: #FFFFFF;
     box-shadow: 0 10px 26px rgba(17, 17, 17, 0.07);
     transform: translateY(-1px);
   }
- 
+
   .mini-case-card h3 {
     font-size: 22px;
     font-weight: 550;
@@ -480,21 +480,21 @@
     padding-bottom: 28px;
     border-bottom: 1px solid var(--border);
   }
- 
+
   .mini-case-card .case-body {
     font-size: 15px;
     font-weight: 450;
     color: var(--text-muted);
     line-height: 1.55;
   }
- 
+
   .tag-row {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 22px 0 26px;
   }
- 
+
   .tag-pill {
     display: inline-flex;
     align-items: center;
@@ -506,21 +506,21 @@
     color: var(--text);
     background: var(--bg);
   }
- 
- 
+
+
   /* =========================================================
      HOW WE WORK
      ========================================================= */
- 
+
   .how-we-work {
     background: var(--grey);
     padding: 76px 0 88px;
   }
- 
+
   .how-we-work h2 {
     margin-bottom: 36px;
   }
- 
+
   .approach-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -530,42 +530,42 @@
     background: var(--bg);
     margin-bottom: 28px;
   }
- 
+
   .approach-card {
     padding: 28px;
     border-right: 1px solid var(--border);
   }
- 
+
   .approach-card:last-child {
     border-right: none;
   }
- 
+
   .approach-num {
     font-size: 13px;
     font-weight: 450;
     color: var(--text-faint);
     margin-bottom: 14px;
   }
- 
+
   .approach-title {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
- 
+
   .approach-desc {
     font-size: 15px;
     font-weight: 450;
     color: var(--text-muted);
     line-height: 1.5;
   }
- 
- 
+
+
   /* =========================================================
      CTA BAR
      ========================================================= */
- 
+
   .cta-bar {
     padding: 58px 0;
     display: flex;
@@ -575,57 +575,57 @@
     flex-wrap: wrap;
     gap: 24px;
   }
- 
+
   .cta-bar h2 {
     font-size: 34px;
     margin-bottom: 10px;
   }
- 
+
   .cta-bar .lede {
     max-width: 420px;
     margin-bottom: 0;
   }
- 
- 
+
+
   /* =========================================================
      FOOTER
      ========================================================= */
- 
+
   footer {
     background: #0A0A0A;
     color: var(--dark-text-muted);
     padding: 60px 0 30px;
   }
- 
+
   .footer-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 64px;
     padding-bottom: 40px;
   }
- 
+
   .footer-col {
     min-width: 140px;
   }
- 
+
   .footer-col:nth-child(2) {
     margin-left: auto;
   }
- 
+
   .footer-logo {
     color: var(--dark-text);
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 14px;
   }
- 
+
   .footer-tagline {
     font-size: 14px;
     font-weight: 450;
     line-height: 1.5;
     max-width: 220px;
   }
- 
+
   .footer-heading {
     font-size: 12px;
     font-weight: 600;
@@ -633,23 +633,23 @@
     color: var(--dark-text-muted);
     margin-bottom: 18px;
   }
- 
+
   .footer-links li {
     margin-bottom: 12px;
   }
- 
+
   .footer-links a {
     font-size: 14px;
     font-weight: 450;
     color: #C2C5CC;
     transition: color 0.15s ease;
   }
- 
+
   .footer-links a:hover,
   .footer-links a:focus-visible {
     color: var(--dark-text);
   }
- 
+
   .footer-bottom {
     display: flex;
     align-items: center;
@@ -662,27 +662,27 @@
     flex-wrap: wrap;
     gap: 14px;
   }
- 
+
   .footer-bottom .link-blue {
     font-size: 13px;
   }
- 
- 
+
+
   /* =========================================================
      RESPONSIVE
      ========================================================= */
- 
+
   @media (max-width: 900px) {
- 
+
     .wrap {
       padding: 0 24px;
     }
- 
- 
+
+
     /* =======================================================
        MOBILE NAVBAR
        ======================================================= */
- 
+
     .nav {
       width: 100%;
       max-width: none;
@@ -690,15 +690,15 @@
       gap: 12px;
       flex-wrap: nowrap;
     }
- 
+
     .logo {
       flex-shrink: 0;
     }
- 
+
     .nav-toggle {
       display: flex;
     }
- 
+
     .nav-menu {
       display: none;
       position: absolute;
@@ -713,11 +713,11 @@
       padding: 20px 24px 26px;
       box-shadow: 0 12px 24px rgba(17, 17, 17, 0.06);
     }
- 
+
     .nav-menu.open {
       display: flex;
     }
- 
+
     .nav-links {
       display: flex;
       flex-direction: column;
@@ -725,170 +725,269 @@
       gap: 16px;
       width: 100%;
     }
- 
+
     .nav-links a {
       font-size: 15px;
     }
- 
+
     .nav-menu .btn {
       font-size: 14px;
       padding: 11px 20px;
     }
- 
- 
+
+
     /* =======================================================
        PAGE CONTENT
        ======================================================= */
- 
+
     .page-hero {
       padding: 48px 0 90px;
     }
- 
+
     h1 {
       font-size: 36px;
     }
- 
+
     h2 {
       font-size: 28px;
     }
- 
+
     .featured-case-grid {
       grid-template-columns: 1fr;
     }
- 
+
     .featured-case-main {
       border-right: none;
       border-bottom: 1px solid var(--border);
     }
- 
+
     .secondary-case-grid {
       grid-template-columns: 1fr;
     }
- 
+
     .approach-grid {
       grid-template-columns: 1fr;
     }
- 
+
     .approach-card {
       border-right: none;
       border-bottom: 1px solid var(--border);
     }
- 
+
     .approach-card:last-child {
       border-bottom: none;
     }
- 
+
     .cta-bar {
       flex-direction: column;
       align-items: flex-start;
     }
- 
+
     .footer-grid {
       gap: 36px;
     }
- 
+
     .footer-col:nth-child(2) {
       margin-left: 0;
     }
- 
+
     .footer-bottom {
       flex-direction: column;
       align-items: flex-end;
       text-align: right;
     }
- 
+
   }
- 
- 
+
+
   /* =========================================================
      MOBILE NAVBAR — SMALL SCREEN
      ========================================================= */
- 
+
   @media (max-width: 600px) {
- 
+
     .nav {
       padding: 16px 16px;
       gap: 9px;
     }
- 
+
     .logo {
       font-size: 17px;
     }
- 
+
   }
- 
- 
+
+
   /* =========================================================
      MOBILE NAVBAR — VERY SMALL SCREEN
      ========================================================= */
- 
+
   @media (max-width: 430px) {
- 
+
     .nav {
       padding: 14px 12px;
       gap: 7px;
     }
- 
+
     .logo {
       font-size: 16px;
     }
- 
+
   }
- 
- 
+
+
   /* =========================================================
      DESKTOP NAV MENU
      ========================================================= */
- 
+
   @media (min-width: 901px) {
- 
+
     .nav-toggle {
       display: none;
     }
- 
+
     .nav {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
     }
- 
+
     .logo {
       justify-self: start;
     }
- 
+
     .nav-menu {
       display: contents;
     }
- 
+
     .nav-links {
       justify-self: center;
       flex-direction: row;
       gap: 36px;
     }
- 
+
     .nav-menu .btn {
       justify-self: end;
     }
- 
+
   }
- 
- 
+
+
   /* =========================================================
      REDUCED MOTION
      ========================================================= */
- 
+
   @media (prefers-reduced-motion: reduce) {
- 
+
     html {
       scroll-behavior: auto;
     }
- 
+
     * {
       transition: none !important;
     }
- 
+
   }
- 
+
+
+  /* =========================================================
+     FINAL REQUESTED FIXES
+     ========================================================= */
+
+  /* Prevent unwanted horizontal scrolling */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+
+  /* =========================================================
+     MOBILE — CASE STUDIES HERO
+     Slightly shifted left
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .page-hero {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 12px;
+      padding-right: 24px;
+    }
+
+    .page-hero-inner {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .page-hero h1 {
+      max-width: 100%;
+    }
+
+  }
+
+
+  /* =========================================================
+     MOBILE — MORE SPACE BETWEEN SECTIONS
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .page-hero {
+      padding-top: 56px;
+      padding-bottom: 110px;
+    }
+
+    .featured-case {
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+
+    .secondary-cases {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .how-we-work {
+      padding-top: 90px;
+      padding-bottom: 100px;
+    }
+
+  }
+
+
+  /* =========================================================
+     MOBILE — FINAL CTA TO FOOTER SPACE
+     ========================================================= */
+
+  @media (max-width: 900px) {
+
+    .cta-bar {
+      padding-top: 58px;
+      padding-bottom: 100px;
+    }
+
+  }
+
+
+  /* =========================================================
+     DESKTOP — MORE SPACE AROUND FINAL CTA & FOOTER
+     ========================================================= */
+
+  @media (min-width: 901px) {
+
+    .cta-bar {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    footer {
+      padding-top: 90px;
+      padding-bottom: 40px;
+    }
+
+  }
+
 </style>
 </head>
  
