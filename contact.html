@@ -1,1268 +1,1812 @@
 
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <title>Contact ARKVUE | Growth Partner for Trading Businesses</title>
+<title>Contact ARKVUE | Growth Partner for Trading Businesses</title>
  
-    <meta name="description"
-        content="Tell ARKVUE about your trading business and we'll get back to you with next steps.">
-    <meta name="author" content="ARKVUE">
-    <link rel="canonical" href="https://arkvue.co/contact.html">
+<meta name="description" content="Tell ARKVUE about your trading business and we'll get back to you with next steps.">
+<meta name="author" content="ARKVUE">
  
-    <link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="canonical" href="https://arkvue.co/contact.html">
  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
-        rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap"
+  rel="stylesheet"
+>
  
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
- 
-    <!--
-        EmailJS lets a static page send mail without opening the
-        visitor's mail client. Free tier: https://www.emailjs.com
-        See the CONFIG block near the bottom <script> for setup.
-    -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
- 
-    <style>
-        :root {
-            --ink: #172033;
-            --muted: #5d6678;
-            --line: #e7e9ee;
-            --soft: #f6f7f9;
-            --accent: #1f6feb;
-            --accent-dark: #1a5fd0;
-            --accent-soft: #eff6ff;
-            --white: #ffffff;
- 
-            --shadow: 0 24px 70px rgba(23, 32, 51, 0.08);
-            --shadow-small: 0 10px 30px rgba(23, 32, 51, 0.06);
-        }
- 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
- 
-        html {
-            scroll-behavior: smooth;
-        }
- 
-        body {
-            background: var(--white);
-            color: var(--ink);
-            font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
-            line-height: 1.5;
-            font-size: 0.9375rem;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
- 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
- 
-        button,
-        input,
-        select,
-        textarea {
-            font: inherit;
-        }
- 
-        button {
-            cursor: pointer;
-        }
- 
-        img {
-            max-width: 100%;
-            display: block;
-        }
- 
-        .container {
-            width: min(100% - 40px, 1160px);
-            margin-inline: auto;
-        }
- 
-        /* BUTTONS */
- 
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 9px;
-            border: 0;
-            border-radius: 999px;
-            padding: 13px 22px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            transition:
-                transform .3s cubic-bezier(.16,1,.3,1),
-                background .25s ease,
-                color .25s ease,
-                box-shadow .3s ease;
-        }
- 
-        .button:hover {
-            transform: translateY(-2px);
-        }
- 
-        .button-primary {
-            background: var(--accent);
-            color: var(--white);
-        }
- 
-        .button-primary:hover {
-            background: var(--accent-dark);
-        }
- 
-        .button:disabled {
-            opacity: .6;
-            cursor: not-allowed;
-            transform: none !important;
-        }
- 
-        .arr {
-            transition: transform .3s cubic-bezier(.16,1,.3,1);
-        }
- 
-        .button:hover .arr {
-            transform: translateX(4px);
-        }
- 
-        /* =========================
-           NAVIGATION
-        ========================= */
- 
-        .nav-wrapper {
-            position: fixed;
-            inset: 0 0 auto 0;
-            z-index: 100;
-        }
- 
-       .navbar {
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<style>
+    :root {
+    --bg: #FFFFFF;
+    --text: #111111;
+    --text-muted: #5B5F6B;
+    --text-faint: #8A8E99;
+    --blue: #2563EB;
+    --blue-hover: #1D4ED8;
+    --grey: #F5F5F5;
+    --border: #E5E5E5;
+    --dark-bg: #111111;
+    --dark-text: #FFFFFF;
+    --dark-text-muted: #A3A7B0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        'Inter',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+/* =========================================================
+   DESKTOP HEADER
+   ========================================================= */
+
+header {
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 100;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 22px 40px;
     position: relative;
+}
+
+.logo {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    display: contents;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 36px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--text);
+}
+
+.nav-menu > .btn {
+    justify-self: end;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 24px;
+    border-radius: 999px;
+    white-space: nowrap;
+    border: 0;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.btn-outline {
+    color: var(--blue);
+    border: 1.5px solid var(--blue);
+    background: transparent;
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    background: #EFF3FE;
+}
+
+.btn-solid {
+    color: #FFFFFF;
+    background: var(--blue);
+    border: 1.5px solid var(--blue);
+}
+
+.btn-solid:hover,
+.btn-solid:focus-visible {
+    background: var(--blue-hover);
+    border-color: var(--blue-hover);
+}
+
+.btn-solid:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.link-blue {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.15s ease;
+}
+
+.link-blue:hover,
+.link-blue:focus-visible {
+    color: var(--blue-hover);
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.eyebrow {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+    color: #2B2B2E;
+    margin-bottom: 22px;
+}
+
+.lede {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 450;
+    color: var(--text-muted);
+    max-width: 420px;
+}
+
+
+/* =========================================================
+   CONTACT HERO
+   ========================================================= */
+
+.contact-hero {
+    padding: 64px 0 90px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.contact-intro {
+    padding-top: 6px;
+}
+
+.happens-next {
+    margin-top: 32px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+}
+
+.happens-next-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+}
+
+.contact-checklist {
+    display: grid;
+    gap: 24px;
+}
+
+.checklist-num {
+    font-size: 13px;
+    font-weight: 450;
+    color: var(--text-faint);
+    margin-bottom: 8px;
+}
+
+.checklist-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.checklist-desc {
+    font-size: 15px;
+    font-weight: 450;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.contact-alt {
+    margin-top: 36px;
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+}
+
+.contact-alt-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+}
+
+.contact-alt .link-blue {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   CONTACT FORM CARD
+   ========================================================= */
+
+.contact-card {
+    background: var(--grey);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.contact-card h2 {
+    font-size: 19px;
+    font-weight: 650;
+    color: var(--text);
+}
+
+.contact-card > p {
+    margin-top: 8px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.field-group {
+    margin-top: 24px;
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.field-label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.field-label .optional {
+    color: var(--text-faint);
+    font-weight: 500;
+}
+
+.field-input,
+.field-select,
+.field-textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    padding: 13px 15px;
+    font-size: 14px;
+    transition:
+        border-color 0.15s ease,
+        background 0.15s ease;
+}
+
+.field-input::placeholder,
+.field-textarea::placeholder {
+    color: var(--text-faint);
+}
+
+.field-input:focus,
+.field-select:focus,
+.field-textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    background: var(--bg);
+}
+
+.field-input.invalid,
+.field-select.invalid,
+.field-textarea.invalid {
+    border-color: #DC2626;
+    background: #FEF2F2;
+}
+
+.field-error {
+    display: none;
+    margin-top: 7px;
+    font-size: 12.5px;
+    font-weight: 550;
+    color: #DC2626;
+}
+
+.field-error.show {
+    display: block;
+}
+
+.field-select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1L6 6L11 1' stroke='%235B5F6B' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.field-textarea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.6;
+}
+
+.contact-submit-row {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-submit-note {
+    color: var(--text-faint);
+    font-size: 13px;
+}
+
+.form-status {
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+}
+
+.form-status.show {
+    display: block;
+}
+
+.form-status.success {
+    color: #15803D;
+}
+
+.form-status.error {
+    color: #DC2626;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: #0A0A0A;
+    color: var(--dark-text-muted);
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding-bottom: 40px;
+}
+
+.footer-col {
+    min-width: 140px;
+}
+
+.footer-col:nth-child(2) {
+    margin-left: auto;
+}
+
+.footer-logo {
+    color: var(--dark-text);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.footer-tagline {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 1.5;
+    max-width: 220px;
+}
+
+.footer-heading {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--dark-text-muted);
+    margin-bottom: 18px;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    font-weight: 450;
+    color: #C2C5CC;
+    transition: color 0.15s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: var(--dark-text);
+}
+
+.footer-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    width: 100%;
-    max-width: none;
-
-    min-height: 72px;
-
-    margin: 0;
-
-    padding: 16px 48px;
-
-    background: rgba(255, 255, 255, .82);
-
-    border-bottom: 1px solid var(--line);
-
-    backdrop-filter: blur(14px) saturate(1.4);
-    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    padding-top: 28px;
+    border-top: 1px solid #26272C;
+    font-size: 13px;
+    font-weight: 450;
+    color: #6B6F79;
+    flex-wrap: wrap;
+    gap: 14px;
 }
- 
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: .02em;
-        }
- 
-        .brand-mark {
-            width: 25px;
-            height: 25px;
-            flex: 0 0 25px;
-            object-fit: contain;
-            border-radius: 6px;
-        }
- 
-        .desktop-nav {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
- 
-            display: flex;
-            align-items: center;
-            gap: 28px;
-        }
- 
-        .nav-link {
-            position: relative;
-            color: var(--muted);
-            font-size: .84rem;
-            font-weight: 500;
-            white-space: nowrap;
-            transition: color .2s ease;
-        }
- 
-        .nav-link:hover {
-            color: var(--ink);
-        }
- 
-        .nav-link.active {
-            color: var(--ink);
-        }
- 
-        .nav-right {
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
- 
-        .nav-cta {
-            white-space: nowrap;
-            padding: 10px 18px;
-        }
- 
-        .menu-toggle {
-            display: none;
-            width: 38px;
-            height: 38px;
-            border: 1px solid var(--line);
-            border-radius: 50%;
-            background: var(--white);
-            color: var(--ink);
-        }
- 
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            inset: 82px 20px auto;
-            z-index: 90;
-            border: 1px solid var(--line);
-            border-radius: 22px;
-            background: rgba(255,255,255,.97);
-            padding: 14px;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-        }
- 
-        .mobile-menu.open {
-            display: grid;
-            gap: 4px;
-        }
- 
-        .mobile-link {
-            border-radius: 14px;
-            padding: 14px;
-            color: var(--muted);
-            font-size: .95rem;
-            font-weight: 600;
-        }
- 
-        .mobile-link:hover {
-            background: var(--soft);
-            color: var(--ink);
-        }
- 
-        /* =========================
-           CONTACT HERO
-        ========================= */
- 
-        .contact-hero {
-            position: relative;
-            min-height: 100vh;
-            padding: 150px 0 90px;
-            background:
-                radial-gradient(55% 60% at 15% 15%, rgba(90,150,255,.14), transparent 65%),
-                var(--ink);
-            overflow: hidden;
-        }
- 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: .85fr 1.15fr;
-            gap: 72px;
-            align-items: start;
-        }
- 
-        /* Left column */
- 
-        .contact-intro {
-            padding-top: 26px;
-        }
- 
-        .contact-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #9cc0ff;
-            font-size: .72rem;
-            font-weight: 700;
-            letter-spacing: .16em;
-            text-transform: uppercase;
-        }
- 
-        .contact-eyebrow::before {
-            content: "";
-            width: 22px;
-            height: 1px;
-            background: #9cc0ff;
-            opacity: .7;
-        }
- 
-        .contact-intro h1 {
-            margin-top: 22px;
-            font-size: clamp(2.1rem, 4.4vw, 3.2rem);
-            font-weight: 700;
-            line-height: 1.08;
-            color: var(--white);
-        }
- 
-        .contact-intro > p {
-            margin-top: 18px;
-            max-width: 420px;
-            color: rgba(255,255,255,.62);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
- 
-        .contact-checklist {
-            list-style: none;
-            margin-top: 34px;
-            display: grid;
-            gap: 16px;
-        }
- 
-        .contact-checklist li {
-            display: flex;
-            align-items: flex-start;
-            gap: 13px;
-            color: rgba(255,255,255,.86);
-            font-size: .96rem;
-            font-weight: 500;
-            line-height: 1.5;
-        }
- 
-        .check-dot {
-            display: inline-flex;
-            flex: 0 0 auto;
-            align-items: center;
-            justify-content: center;
-            width: 22px;
-            height: 22px;
-            margin-top: 1px;
-            border-radius: 50%;
-            background: var(--accent);
-            color: var(--white);
-            font-size: .68rem;
-        }
- 
-        .contact-alt {
-            margin-top: 40px;
-            padding-top: 26px;
-            border-top: 1px solid rgba(255,255,255,.12);
-            color: rgba(255,255,255,.55);
-            font-size: .86rem;
-            line-height: 1.7;
-        }
- 
-        .contact-alt a {
-            color: var(--white);
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
- 
-        .contact-alt a:hover {
-            color: #9cc0ff;
-        }
- 
-        /* Right column — form card */
- 
-        .contact-card {
-            background: rgba(255,255,255,.03);
-            border: 1px solid rgba(255,255,255,.1);
-            border-radius: 24px;
-            padding: 38px;
-            backdrop-filter: blur(6px);
-        }
- 
-        .contact-card h2 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--white);
-        }
- 
-        .contact-card > p {
-            margin-top: 8px;
-            color: rgba(255,255,255,.55);
-            font-size: .88rem;
-        }
- 
-        .field-group {
-            margin-top: 26px;
-        }
- 
-        .field-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
- 
-        .field-label {
-            display: block;
-            margin-bottom: 9px;
-            color: rgba(255,255,255,.72);
-            font-size: .82rem;
-            font-weight: 600;
-        }
- 
-        .field-label .optional {
-            color: rgba(255,255,255,.35);
-            font-weight: 500;
-        }
- 
-        .field-input,
-        .field-select,
-        .field-textarea {
-            width: 100%;
-            border: 1px solid rgba(255,255,255,.14);
-            border-radius: 12px;
-            background: rgba(255,255,255,.05);
-            color: var(--white);
-            padding: 13px 15px;
-            font-size: .9rem;
-            transition:
-                border-color .2s ease,
-                background .2s ease;
-        }
- 
-        .field-input::placeholder,
-        .field-textarea::placeholder {
-            color: rgba(255,255,255,.32);
-        }
- 
-        .field-input:focus,
-        .field-select:focus,
-        .field-textarea:focus {
-            outline: none;
-            border-color: rgba(90,150,255,.55);
-            background: rgba(255,255,255,.07);
-        }
- 
-        .field-select {
-            appearance: none;
-            -webkit-appearance: none;
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1L6 6L11 1' stroke='%23ffffff' stroke-opacity='0.5' stroke-width='1.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-            background-repeat: no-repeat;
-            background-position: right 15px center;
-            padding-right: 40px;
-            cursor: pointer;
-        }
- 
-        .field-select option {
-            background: var(--ink);
-            color: var(--white);
-        }
- 
-        .field-textarea {
-            resize: vertical;
-            min-height: 120px;
-            line-height: 1.6;
-        }
- 
-        .contact-submit-row {
-            margin-top: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 20px;
-        }
- 
-        .contact-submit-note {
-            color: rgba(255,255,255,.5);
-            font-size: .82rem;
-        }
- 
-        .contact-submit-note a {
-            color: rgba(255,255,255,.85);
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
- 
-        .form-status {
-            margin-top: 16px;
-            font-size: .84rem;
-            font-weight: 600;
-            display: none;
-        }
- 
-        .form-status.show {
-            display: block;
-        }
- 
-        .form-status.success {
-            color: #7fd99a;
-        }
- 
-        .form-status.error {
-            color: #ff9a9a;
-        }
- 
-        /* =========================
-           FOOTER
-        ========================= */
- 
-        footer {
-            border-top: 1px solid var(--line);
-            background: var(--soft);
-            padding: 80px 0 36px;
-        }
- 
-        .footer-top {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 40px;
-        }
- 
-        .footer-brand .brand {
-            font-size: 1.15rem;
-        }
- 
-        .footer-brand p {
-            margin-top: 18px;
-            max-width: 280px;
-            color: var(--muted);
-            font-size: .9rem;
-            line-height: 1.65;
-        }
- 
-        .footer-social {
-            display: flex;
-            gap: 10px;
-            margin-top: 22px;
-        }
- 
-        .footer-social a {
-            display: grid;
-            width: 40px;
-            height: 40px;
-            place-items: center;
-            border: 1px solid var(--line);
-            border-radius: 50%;
-            color: var(--muted);
-            background: var(--white);
-            transition:
-                color .25s ease,
-                border-color .25s ease,
-                transform .3s ease;
-        }
- 
-        .footer-social a:hover {
-            color: var(--accent);
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
- 
-        .footer-col h4 {
-            font-size: .75rem;
-            font-weight: 700;
-            letter-spacing: .14em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
- 
-        .footer-col ul {
-            list-style: none;
-            margin-top: 18px;
-            display: grid;
-            gap: 13px;
-        }
- 
-        .footer-col a {
-            color: var(--ink);
-            font-size: .9rem;
-            font-weight: 500;
-            transition: color .2s ease;
-        }
- 
-        .footer-col a:hover {
-            color: var(--accent);
-        }
- 
-        .footer-wordmark {
-            font-size: clamp(3rem, 16vw, 12rem);
-            font-weight: 700;
-            letter-spacing: -.02em;
-            line-height: .9;
-            color: transparent;
-            -webkit-text-stroke: 1px rgba(23,32,51,.1);
-            margin-top: 60px;
-            user-select: none;
-            overflow: hidden;
-        }
- 
-        .footer-bottom {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin-top: 64px;
-            padding-top: 28px;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-            font-size: .8rem;
-        }
- 
-        /* =========================
-           RESPONSIVE
-        ========================= */
- 
-        @media (max-width: 1100px) {
- 
-            .desktop-nav {
-                gap: 20px;
-            }
- 
-            .navbar {
-                padding-inline: 24px;
-            }
- 
-            .footer-top {
-                grid-template-columns: 1fr 1fr;
-            }
- 
-        }
- 
-        @media (max-width: 900px) {
- 
-            .desktop-nav {
-                display: none;
-            }
- 
-            .nav-cta {
-                display: none;
-            }
- 
-            .menu-toggle {
-                display: grid;
-                place-items: center;
-            }
- 
-            .navbar {
-                padding: 14px 20px;
-            }
- 
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 48px;
-            }
- 
-            .contact-intro {
-                padding-top: 0;
-            }
- 
-        }
- 
-        @media (max-width: 760px) {
- 
-            .container {
-                width: min(100% - 32px, 1160px);
-            }
- 
-            .contact-hero {
-                padding: 130px 0 70px;
-            }
- 
-            .contact-card {
-                padding: 26px;
-            }
- 
-            .field-row {
-                grid-template-columns: 1fr;
-                gap: 0;
-            }
- 
-            .footer-top {
-                grid-template-columns: 1fr;
-                gap: 34px;
-            }
- 
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start;
-            }
- 
-        }
- 
-        @media (prefers-reduced-motion: reduce) {
- 
-            html {
-                scroll-behavior: auto;
-            }
- 
-        }
-    </style>
+
+.footer-bottom .link-blue {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+   3-LINE HAMBURGER
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .wrap {
+        padding: 0 24px;
+    }
+
+    header {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 14px 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .logo {
+        justify-self: auto;
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+    /* Hide desktop menu */
+    .nav-menu {
+        display: none;
+    }
+
+    /* Hamburger */
+    .nav-toggle {
+        display: flex;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: transparent;
+
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+
+        flex-shrink: 0;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--text);
+        border-radius: 2px;
+    }
+
+    /* Open mobile menu */
+    .nav-menu.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        padding: 20px 18px 24px;
+
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .nav-menu.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav-menu.active .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 13px 0;
+
+        font-size: 14px;
+        color: var(--text-muted);
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-menu.active > .btn {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-hero {
+        padding: 40px 0 64px;
+    }
+
+    .field-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .footer-grid {
+        gap: 36px;
+    }
+
+    .footer-col:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .nav {
+        padding: 13px 14px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-toggle {
+        width: 36px;
+        height: 36px;
+    }
+
+    .nav-toggle span {
+        width: 21px;
+        height: 2px;
+    }
+
+    .wrap {
+        padding: 0 18px;
+    }
+
+    .contact-hero {
+        padding: 34px 0 56px;
+    }
+
+    .contact-grid {
+        gap: 32px;
+    }
+
+    .contact-card {
+        padding: 24px 20px;
+    }
+
+    .contact-card h2 {
+        font-size: 18px;
+    }
+
+    .field-row {
+        grid-template-columns: 1fr;
+    }
+
+    .field-group {
+        margin-top: 20px;
+    }
+
+    .contact-submit-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .contact-submit-row .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-submit-note {
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .nav {
+        padding: 12px 12px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav-toggle {
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-toggle span {
+        width: 20px;
+    }
+
+    .wrap {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .contact-card {
+        padding: 22px 16px;
+    }
+
+    .nav-menu.active {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
+}
+</style>
 </head>
  
 <body>
  
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
- 
-    <header class="nav-wrapper">
-        <div class="navbar" id="navbar">
- 
-            <a href="index.html#top" class="brand" aria-label="ARKVUE home">
-                <img
-                    class="brand-mark"
-                    src="/favicon/A.svg"
-                    alt="ARKVUE logo">
-                <span>ARKVUE</span>
-            </a>
- 
-            <nav class="desktop-nav" aria-label="Primary navigation">
-                <a class="nav-link" href="index.html#who-we-help">Who We Help</a>
-                <a class="nav-link" href="index.html#how-it-works">How It Works</a>
-                <a class="nav-link" href="case-studies.html">Case Studies</a>
-                <a class="nav-link active" href="contact.html">Contact</a>
-            </nav>
- 
-            <div class="nav-right">
- 
-                <a
-                    class="button button-primary nav-cta"
-                    href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Book a Growth Audit
-                </a>
- 
-                <button
-                    class="menu-toggle"
-                    id="menu-toggle"
-                    aria-label="Open menu"
-                    aria-expanded="false"
-                    type="button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
- 
-            </div>
- 
-        </div>
-    </header>
- 
-    <div class="mobile-menu" id="mobile-menu">
- 
-        <a class="mobile-link" href="index.html#who-we-help">
-            Who We Help
+<header>
+    <div class="nav">
+
+        <a href="index.html" class="logo">
+            ARKVUE
         </a>
- 
-        <a class="mobile-link" href="index.html#how-it-works">
-            How It Works
-        </a>
- 
-        <a class="mobile-link" href="case-studies.html">
-            Case Studies
-        </a>
- 
-        <a class="mobile-link" href="contact.html">
-            Contact
-        </a>
- 
-        <a
-            class="button button-primary"
-            href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-            target="_blank"
-            rel="noopener noreferrer">
-            Book a Growth Audit
-        </a>
- 
-    </div>
- 
-    <main>
- 
-        <!-- =========================
-             CONTACT HERO
-        ========================= -->
- 
-        <section class="contact-hero">
- 
-            <div class="container">
- 
-                <div class="contact-grid">
- 
-                    <!-- LEFT: intro + checklist -->
- 
-                    <div class="contact-intro">
- 
-                        <div class="contact-eyebrow">
-                            Contact ARKVUE
-                        </div>
- 
-                        <h1>
-                            Let's find your
-                            growth bottleneck.
-                        </h1>
- 
-                        
-                        <ul class="contact-checklist">
- 
-                            <li>
-                                <span class="check-dot">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                See where your growth system is actually breaking
-                            </li>
- 
-                            <li>
-                                <span class="check-dot">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                Find out honestly if ARKVUE is the right fit
-                            </li>
- 
-                            <li>
-                                <span class="check-dot">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                Leave with a clear, high-leverage next step
-                            </li>
- 
-                        </ul>
- 
-                        <div class="contact-alt">
-                            Prefer to talk it through live?
-                            <a
-                                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Book a Growth Audit call
-                            </a>
-                        </div>
- 
-                    </div>
- 
-                    <!-- RIGHT: form -->
- 
-                    <div class="contact-card">
- 
-                        <h2>Tell us about your business</h2>
-                        <p>We typically reply within one business day.</p>
- 
-                        <form id="contact-form" novalidate>
 
-    <div class="field-group">
-        <label class="field-label" for="cf-name">Name</label>
-        <input class="field-input" type="text" id="cf-name" name="name"
-            placeholder="Your name" autocomplete="name" required>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-email">Work Email</label>
-        <input class="field-input" type="email" id="cf-email" name="email"
-            placeholder="you@yourbusiness.com" autocomplete="email" required>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-company">Business / Company</label>
-        <input class="field-input" type="text" id="cf-company" name="company"
-            placeholder="Your business or company name" autocomplete="organization" required>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-business-type">
-            What type of trading business are you?
-        </label>
-        <select class="field-select" id="cf-business-type" name="business_type" required>
-            <option value="" disabled selected>Select one</option>
-            <option value="Trading Educator">Trading Educator</option>
-            <option value="Trading Academy">Trading Academy</option>
-            <option value="Brokerage">Brokerage</option>
-            <option value="Other Trading Business">Other Trading Business</option>
-        </select>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-website">Website / Instagram</label>
-        <input class="field-input" type="text" id="cf-website" name="website"
-            placeholder="https://yourwebsite.com or @yourinstagram" required>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-challenge">
-            What's currently slowing your growth?
-        </label>
-        <textarea class="field-textarea" id="cf-challenge" name="challenge"
-            placeholder="Tell us what's currently slowing your growth..." required></textarea>
-    </div>
-
-    <div class="field-group">
-        <label class="field-label" for="cf-message">Anything else we should know?</label>
-        <textarea class="field-textarea" id="cf-message" name="message"
-            placeholder="Anything else you'd like us to know..."></textarea>
-    </div>
-
-    <div class="contact-submit-row">
-        <button class="button button-primary" type="submit" id="cf-submit">
-            Send message <span class="arr">→</span>
+        <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
-        <span class="contact-submit-note">
-            Or email us directly at
-            <a href="mailto:arkvuebusiness@gmail.com">arkvuebusiness@gmail.com</a>
-        </span>
-    </div>
+        <div class="nav-menu" id="nav-menu">
 
-    <div class="form-status" id="cf-status"></div>
-</form>
+            <nav class="nav-links">
+                <a href="case-studies.html">Work</a>
+                <a href="index.html#approach">Approach</a>
+                <a href="index.html#about">About</a>
+            </nav>
+
+            <a
+                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+            >
+                Book a Growth Audit →
+            </a>
+
+        </div>
+
+    </div>
+</header>
  
-                    </div>
+<main>
+ 
+    <section class="wrap contact-hero">
+ 
+        <div class="contact-grid">
+ 
+            <!-- LEFT: INTRO + CHECKLIST -->
+ 
+            <div class="contact-intro">
+ 
+                <div class="eyebrow">
+                    CONTACT ARKVUE
+                </div>
+ 
+                <h1>
+                    Let's talk about your growth.
+                </h1>
+ 
+                <p class="lede">
+                    Tell us what you're working on, what's not working, and where you think growth is getting stuck.
+                </p>
+ 
+                <div class="happens-next">
+ 
+                    <div class="happens-next-label">WHAT HAPPENS NEXT</div>
+ 
+                    <ul class="contact-checklist">
+ 
+                        <li>
+                            <div class="checklist-num">01</div>
+                            <div class="checklist-title">WE REVIEW</div>
+                            <div class="checklist-desc">We look at your business and the information you share.</div>
+                        </li>
+ 
+                        <li>
+                            <div class="checklist-num">02</div>
+                            <div class="checklist-title">WE TALK</div>
+                            <div class="checklist-desc">A 30-minute working session to understand the bottleneck.</div>
+                        </li>
+ 
+                        <li>
+                            <div class="checklist-num">03</div>
+                            <div class="checklist-title">WE RECOMMEND</div>
+                            <div class="checklist-desc">If there's a clear opportunity to help, we'll tell you what we'd fix first.</div>
+                        </li>
+ 
+                    </ul>
+ 
+                </div>
+ 
+                <div class="contact-alt">
+ 
+                    <span class="contact-alt-label">PREFER EMAIL?</span>
+ 
+                    <a
+                        href="mailto:arkvuebusiness@gmail.com"
+                        class="link-blue"
+                    >
+                        arkvuebusiness@gmail.com
+                    </a>
  
                 </div>
  
             </div>
  
-        </section>
+            <!-- RIGHT: FORM -->
  
-    </main>
+            <div class="contact-card">
  
-    <!-- =========================
-         FOOTER
-    ========================= -->
+                <h2>
+                    Tell us about your business.
+                </h2>
  
-    <footer>
+                <p>
+                    We typically reply within one business day.
+                </p>
  
-        <div class="container">
+                <form id="contact-form" novalidate>
  
-            <div class="footer-top">
+                    <div class="field-row">
  
-                <div class="footer-brand">
+                        <!-- Name -->
  
-                    <a href="index.html#top" class="brand">
+                        <div class="field-group">
  
-                        <img
-                            class="brand-mark"
-                            src="/favicon/A.svg"
-                            alt="ARKVUE logo">
+                            <label
+                                class="field-label"
+                                for="cf-name"
+                            >
+                                Name
+                            </label>
  
-                        <span>
-                            ARKVUE
+                            <input
+                                class="field-input"
+                                type="text"
+                                id="cf-name"
+                                name="name"
+                                placeholder="Your name"
+                                autocomplete="name"
+                                required
+                            >
+ 
+                            <span
+                                class="field-error"
+                                id="err-name"
+                            >
+                                Please enter your name.
+                            </span>
+ 
+                        </div>
+ 
+                        <!-- Email -->
+ 
+                        <div class="field-group">
+ 
+                            <label
+                                class="field-label"
+                                for="cf-email"
+                            >
+                                Work Email
+                            </label>
+ 
+                            <input
+                                class="field-input"
+                                type="email"
+                                id="cf-email"
+                                name="email"
+                                placeholder="you@company.com"
+                                autocomplete="email"
+                                required
+                            >
+ 
+                            <span
+                                class="field-error"
+                                id="err-email"
+                            >
+                                Please enter your work email.
+                            </span>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <div class="field-row">
+ 
+                        <!-- Company -->
+ 
+                        <div class="field-group">
+ 
+                            <label
+                                class="field-label"
+                                for="cf-company"
+                            >
+                                Business / Company
+                            </label>
+ 
+                            <input
+                                class="field-input"
+                                type="text"
+                                id="cf-company"
+                                name="company"
+                                placeholder="Your business name"
+                                autocomplete="organization"
+                                required
+                            >
+ 
+                            <span
+                                class="field-error"
+                                id="err-company"
+                            >
+                                Please enter your business or company name.
+                            </span>
+ 
+                        </div>
+ 
+                        <!-- Business Type -->
+ 
+                        <div class="field-group">
+ 
+                            <label
+                                class="field-label"
+                                for="cf-business-type"
+                            >
+                                Business Type
+                            </label>
+ 
+                            <select
+                                class="field-select"
+                                id="cf-business-type"
+                                name="business_type"
+                                required
+                            >
+ 
+                                <option
+                                    value=""
+                                    disabled
+                                    selected
+                                >
+                                    Select type
+                                </option>
+ 
+                                <option value="Trading Educator">
+                                    Trading Educator
+                                </option>
+ 
+                                <option value="Trading Academy">
+                                    Trading Academy
+                                </option>
+ 
+                                <option value="Brokerage">
+                                    Brokerage
+                                </option>
+ 
+                                <option value="Other Trading Business">
+                                    Other Trading Business
+                                </option>
+ 
+                            </select>
+ 
+                            <span
+                                class="field-error"
+                                id="err-business-type"
+                            >
+                                Please select what type of trading business you are.
+                            </span>
+ 
+                        </div>
+ 
+                    </div>
+ 
+                    <!-- Website -->
+ 
+                    <div class="field-group">
+ 
+                        <label
+                            class="field-label"
+                            for="cf-website"
+                        >
+                            Website / Instagram
+                        </label>
+ 
+                        <input
+                            class="field-input"
+                            type="text"
+                            id="cf-website"
+                            name="website"
+                            placeholder="yoursite.com or @handle"
+                            required
+                        >
+ 
+                        <span
+                            class="field-error"
+                            id="err-website"
+                        >
+                            Please enter your website or Instagram handle.
                         </span>
  
-                    </a>
+                    </div>
  
-                    <p>
-                        Growth partner for founder-led trading businesses.
-                        We diagnose the bottleneck, then build the system around it.
-                    </p>
+                    <!-- Challenge -->
  
-                    <div class="footer-social">
+                    <div class="field-group">
  
+                        <label
+                            class="field-label"
+                            for="cf-challenge"
+                        >
+                            What's currently slowing your growth?
+                        </label>
+ 
+                        <textarea
+                            class="field-textarea"
+                            id="cf-challenge"
+                            name="challenge"
+                            placeholder="Describe where growth feels stuck — audience, leads, conversions, revenue..."
+                            required
+                        ></textarea>
+ 
+                        <span
+                            class="field-error"
+                            id="err-challenge"
+                        >
+                            Please tell us what's currently slowing your growth.
+                        </span>
+ 
+                    </div>
+ 
+                    <!-- Additional Message -->
+ 
+                    <div class="field-group">
+ 
+                        <label
+                            class="field-label"
+                            for="cf-message"
+                        >
+                            Anything else we should know?
+                            <span class="optional">(optional)</span>
+                        </label>
+ 
+                        <textarea
+                            class="field-textarea"
+                            id="cf-message"
+                            name="message"
+                            placeholder="Anything else you'd like us to know..."
+                        ></textarea>
+ 
+                    </div>
+ 
+                    <!-- Submit -->
+ 
+                    <div class="contact-submit-row">
+ 
+                        <button
+                            class="btn btn-solid"
+                            type="submit"
+                            id="cf-submit"
+                        >
+                            Send Enquiry →
+                        </button>
+ 
+                        <span class="contact-submit-note">
+ 
+                            We'll review your enquiry and get back to you.
+ 
+                        </span>
+ 
+                    </div>
+ 
+                    <div
+                        class="form-status"
+                        id="cf-status"
+                    ></div>
+ 
+                </form>
+ 
+            </div>
+ 
+        </div>
+ 
+    </section>
+ 
+</main>
+ 
+<!-- ---------- FOOTER ---------- -->
+ 
+<footer>
+ 
+    <div class="wrap">
+ 
+        <div class="footer-grid">
+ 
+            <!-- Footer Brand -->
+ 
+            <div class="footer-col">
+ 
+                <div class="footer-logo">
+                    ARKVUE
+                </div>
+ 
+                <p class="footer-tagline">
+                    Growth partner for founder-led trading businesses.
+                </p>
+ 
+            </div>
+ 
+            <!-- Navigation -->
+ 
+            <div class="footer-col">
+ 
+                <div class="footer-heading">
+                    NAVIGATION
+                </div>
+ 
+                <ul class="footer-links">
+ 
+                    <li>
+                        <a href="case-studies.html">
+                            Work
+                        </a>
+                    </li>
+ 
+                    <li>
+                        <a href="index.html#approach">
+                            Approach
+                        </a>
+                    </li>
+ 
+                    <li>
+                        <a href="index.html#about">
+                            About
+                        </a>
+                    </li>
+ 
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+ 
+                </ul>
+ 
+            </div>
+ 
+            <!-- Industries -->
+ 
+            <div class="footer-col">
+ 
+                <div class="footer-heading">
+                    WE WORK WITH
+                </div>
+ 
+                <ul class="footer-links">
+ 
+                    <li>
+                        <a href="#">
+                            Trading Educators
+                        </a>
+                    </li>
+ 
+                    <li>
+                        <a href="#">
+                            Trading Academies
+                        </a>
+                    </li>
+ 
+                    <li>
+                        <a href="#">
+                            Brokerages
+                        </a>
+                    </li>
+ 
+                </ul>
+ 
+            </div>
+ 
+            <!-- Connect -->
+ 
+            <div class="footer-col">
+ 
+                <div class="footer-heading">
+                    CONNECT
+                </div>
+ 
+                <ul class="footer-links">
+ 
+                    <li>
                         <a
                             href="https://www.linkedin.com/company/arkvue"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="LinkedIn">
- 
-                            <i class="fa-brands fa-linkedin-in"></i>
- 
+                        >
+                            LinkedIn
                         </a>
+                    </li>
  
+                    <li>
                         <a
                             href="https://www.instagram.com/arkvue.co"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Instagram">
- 
-                            <i class="fa-brands fa-instagram"></i>
- 
+                        >
+                            Instagram
                         </a>
+                    </li>
  
+                    <li>
                         <a
                             href="https://x.com/ARKVUE"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="X">
- 
-                            <i class="fa-brands fa-x-twitter"></i>
- 
+                        >
+                            X
                         </a>
+                    </li>
  
-                    </div>
+                    <li>
+                        <a href="mailto:arkvuebusiness@gmail.com">
+                            arkvuebusiness@gmail.com
+                        </a>
+                    </li>
  
-                </div>
- 
-                <div class="footer-col">
- 
-                    <h4>
-                        Company
-                    </h4>
- 
-                    <ul>
- 
-                        <li>
-                            <a href="index.html#who-we-help">
-                                Who We Help
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="index.html#how-it-works">
-                                How It Works
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="case-studies.html">
-                                Case Studies
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="contact.html">
-                                Contact
-                            </a>
-                        </li>
- 
-                    </ul>
- 
-                </div>
- 
-                <div class="footer-col">
- 
-                    <h4>
-                        Audiences
-                    </h4>
- 
-                    <ul>
- 
-                        <li>
-                            <a href="trading-educators.html">
-                                Trading Educators
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="trading-academies.html">
-                                Trading Academies
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="brokerages.html">
-                                Brokerages
-                            </a>
-                        </li>
- 
-                    </ul>
- 
-                </div>
- 
-                <div class="footer-col">
- 
-                    <h4>
-                        Get in touch
-                    </h4>
- 
-                    <ul>
- 
-                        <li>
-                            <a href="mailto:arkvuebusiness@gmail.com">
-                                arkvuebusiness@gmail.com
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a href="tel:+917666976869">
-                                +91 76669 76869
-                            </a>
-                        </li>
- 
-                        <li>
-                            <a
-                                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                                target="_blank"
-                                rel="noopener noreferrer">
- 
-                                Book a Growth Audit
- 
-                            </a>
-                        </li>
- 
-                    </ul>
- 
-                </div>
- 
-            </div>
- 
-           
-            <div class="footer-bottom">
- 
-                <div>
-                    © 2026 ARKVUE. All rights reserved.
-                </div>
- 
-                <div>
-                    <a href="index.html#top">
-                        Back to top ↑
-                    </a>
-                </div>
+                </ul>
  
             </div>
  
         </div>
  
-    </footer>
+        <div class="footer-bottom">
  
-    <script>
+            <div>
+                © 2026 ARKVUE. All rights reserved.
+            </div>
  
-        /* =========================
-           MOBILE MENU
-        ========================= */
+            <a
+                href="index.html#top"
+                class="link-blue"
+            >
+                Back to top ↑
+            </a>
  
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
+        </div>
  
-        menuToggle.addEventListener("click", () => {
+    </div>
  
-            const isOpen = mobileMenu.classList.toggle("open");
+</footer>
  
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
+<!-- ---------- CONTACT FORM SCRIPT ---------- -->
  
-            menuToggle.innerHTML = isOpen
-                ? '<i class="fa-solid fa-xmark"></i>'
-                : '<i class="fa-solid fa-bars"></i>';
+<script>
  
-        });
+/*
+=========================================================
+CONTACT FORM — EMAILJS
+=========================================================
  
-        mobileMenu.querySelectorAll("a").forEach((link) => {
+EmailJS allows this static website to send form
+submissions directly to your inbox without requiring
+a backend/server.
  
-            link.addEventListener("click", () => {
+Your current EmailJS credentials are already included
+below.
  
-                mobileMenu.classList.remove("open");
+Template variables required in EmailJS:
  
-                menuToggle.setAttribute("aria-expanded", "false");
+{{name}}
+{{email}}
+{{company}}
+{{business_type}}
+{{website}}
+{{challenge}}
+{{message}}
  
-                menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+=========================================================
+*/
  
-            });
+/* ---------- EmailJS Configuration ---------- */
  
-        });
+const EMAILJS_PUBLIC_KEY = "dXKXuo-4QyF27vQq7";
+const EMAILJS_SERVICE_ID = "service_a35ufp3";
+const EMAILJS_TEMPLATE_ID = "template_ieivmia";
  
  
-        /* =========================
-           CONTACT FORM — EmailJS
-           ---------------------------------
-           1. Create a free account at https://www.emailjs.com
-           2. Connect your Gmail/inbox as an Email Service
-              -> copy the SERVICE ID
-           3. Create an Email Template with variables:
-              {{name}} {{email}} {{company}} {{business_type}} {{website}} {{challenge}} {{message}}
-              -> copy the TEMPLATE ID
-           4. Account > General > copy your PUBLIC KEY
-           5. Paste all three below. That's it — no server needed.
-        ========================= */
+/* ---------- Initialize EmailJS ---------- */
  
-        const EMAILJS_PUBLIC_KEY  = "dXKXuo-4QyF27vQq7";
-        const EMAILJS_SERVICE_ID  = "service_a35ufp3";
-        const EMAILJS_TEMPLATE_ID = "template_ieivmia";
+if (
+    window.emailjs &&
+    EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY"
+) {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+}
  
-        if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
-            emailjs.init(EMAILJS_PUBLIC_KEY);
+ 
+/* ---------- Form Elements ---------- */
+ 
+const form = document.getElementById("contact-form");
+const submitBtn = document.getElementById("cf-submit");
+const status = document.getElementById("cf-status");
+ 
+ 
+/* ---------- Status Message ---------- */
+ 
+function setStatus(message, type) {
+ 
+    status.textContent = message;
+ 
+    status.className =
+        "form-status show " + type;
+}
+ 
+ 
+/* ---------- Required Fields ---------- */
+ 
+const requiredFields = [
+ 
+    {
+        id: "cf-name",
+        errId: "err-name"
+    },
+ 
+    {
+        id: "cf-email",
+        errId: "err-email"
+    },
+ 
+    {
+        id: "cf-company",
+        errId: "err-company"
+    },
+ 
+    {
+        id: "cf-business-type",
+        errId: "err-business-type"
+    },
+ 
+    {
+        id: "cf-website",
+        errId: "err-website"
+    },
+ 
+    {
+        id: "cf-challenge",
+        errId: "err-challenge"
+    }
+ 
+];
+ 
+ 
+/* ---------- Field Validation ---------- */
+ 
+function validateField(fieldInfo) {
+ 
+    const field =
+        document.getElementById(fieldInfo.id);
+ 
+    const errEl =
+        document.getElementById(fieldInfo.errId);
+ 
+    const valid =
+        field.checkValidity();
+ 
+ 
+    if (valid) {
+ 
+        field.classList.remove("invalid");
+ 
+        errEl.classList.remove("show");
+ 
+    } else {
+ 
+        field.classList.add("invalid");
+ 
+        errEl.textContent =
+            field.validity.typeMismatch
+                ? "Please enter a valid email address."
+                : errEl.dataset.defaultMessage;
+ 
+        errEl.classList.add("show");
+    }
+ 
+    return valid;
+}
+ 
+ 
+/* ---------- Attach Validation Events ---------- */
+ 
+requiredFields.forEach((fieldInfo) => {
+ 
+    const field =
+        document.getElementById(fieldInfo.id);
+ 
+    const errEl =
+        document.getElementById(fieldInfo.errId);
+ 
+ 
+    /*
+    Save the original/default validation
+    message before JavaScript changes it.
+    */
+ 
+    errEl.dataset.defaultMessage =
+        errEl.textContent;
+ 
+ 
+    /*
+    Recheck while the visitor fixes the field.
+    */
+ 
+    const recheck = () => {
+ 
+        if (
+            field.classList.contains("invalid")
+        ) {
+            validateField(fieldInfo);
         }
  
-        const form = document.getElementById("contact-form");
-        const submitBtn = document.getElementById("cf-submit");
-        const status = document.getElementById("cf-status");
+    };
  
-        function setStatus(message, type) {
-            status.textContent = message;
-            status.className = "form-status show " + type;
+ 
+    field.addEventListener(
+        "input",
+        recheck
+    );
+ 
+    field.addEventListener(
+        "change",
+        recheck
+    );
+ 
+ 
+    field.addEventListener(
+        "blur",
+        () => validateField(fieldInfo)
+    );
+ 
+});
+ 
+ 
+/* ---------- Validate Entire Form ---------- */
+ 
+function validateForm() {
+ 
+    let firstInvalidField = null;
+ 
+ 
+    requiredFields.forEach((fieldInfo) => {
+ 
+        const isValid =
+            validateField(fieldInfo);
+ 
+ 
+        if (
+            !isValid &&
+            !firstInvalidField
+        ) {
+ 
+            firstInvalidField =
+                document.getElementById(fieldInfo.id);
+ 
         }
  
-        form.addEventListener("submit", (e) => {
+    });
  
-            e.preventDefault();
  
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
+    if (firstInvalidField) {
  
-            const params = {
-                name: document.getElementById("cf-name").value.trim(),
-                email: document.getElementById("cf-email").value.trim(),
-                company: document.getElementById("cf-company").value.trim(),
-                business_type: document.getElementById("cf-business-type").value,
-                website: document.getElementById("cf-website").value.trim(),
-                challenge: document.getElementById("cf-challenge").value.trim(),
-                message: document.getElementById("cf-message").value.trim() || "—"
-            };
+        firstInvalidField.focus();
  
-            const notConfigured =
-                EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY" ||
-                EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" ||
-                EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID";
- 
-            if (notConfigured || !window.emailjs) {
- 
-                // Fallback while EmailJS isn't configured yet:
-                // opens the visitor's mail app pre-filled, so the
-                // form still works end-to-end during setup.
-                const body = encodeURIComponent(
-                    "Name: " + params.name +
-                    "\nWork Email: " + params.email +
-                    "\nBusiness / Company: " + params.company +
-                    "\nBusiness Type: " + params.business_type +
-                    "\nWebsite / Instagram: " + params.website +
-                    "\n\nWhat's currently slowing your growth?:\n" + params.challenge +
-                    "\n\nAnything else we should know?:\n" + params.message
-                );
- 
-                window.location.href =
-                    "mailto:arkvuebusiness@gmail.com?subject=New%20enquiry%20from%20" +
-                    encodeURIComponent(params.name) +
-                    "&body=" + body;
- 
-                return;
- 
-            }
- 
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Sending...";
- 
-            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
-                .then(() => {
- 
-                    window.location.href = "thank-you.html";
- 
-                })
-                .catch(() => {
- 
-                    setStatus("Something went wrong. Please email us directly instead.", "error");
- 
-                })
-                .finally(() => {
- 
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = 'Send message <span class="arr">→</span>';
- 
-                });
- 
+        firstInvalidField.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
         });
  
-    </script>
+ 
+        setStatus(
+            "Please fill in the highlighted fields before sending.",
+            "error"
+        );
+ 
+ 
+        return false;
+    }
+ 
+ 
+    return true;
+}
+ 
+ 
+/* ---------- Form Submit ---------- */
+ 
+form.addEventListener("submit", (e) => {
+ 
+    e.preventDefault();
+ 
+ 
+    /* Validate before sending */
+ 
+    if (!validateForm()) {
+        return;
+    }
+ 
+ 
+    /* ---------- Collect Form Data ---------- */
+ 
+    const params = {
+ 
+        name:
+            document
+                .getElementById("cf-name")
+                .value
+                .trim(),
+ 
+        email:
+            document
+                .getElementById("cf-email")
+                .value
+                .trim(),
+ 
+        company:
+            document
+                .getElementById("cf-company")
+                .value
+                .trim(),
+ 
+        business_type:
+            document
+                .getElementById("cf-business-type")
+                .value,
+ 
+        website:
+            document
+                .getElementById("cf-website")
+                .value
+                .trim(),
+ 
+        challenge:
+            document
+                .getElementById("cf-challenge")
+                .value
+                .trim(),
+ 
+        message:
+            document
+                .getElementById("cf-message")
+                .value
+                .trim() || "—"
+ 
+    };
+ 
+ 
+    /* ---------- Check EmailJS Configuration ---------- */
+ 
+    const notConfigured =
+ 
+        EMAILJS_PUBLIC_KEY ===
+            "YOUR_PUBLIC_KEY"
+ 
+        ||
+ 
+        EMAILJS_SERVICE_ID ===
+            "YOUR_SERVICE_ID"
+ 
+        ||
+ 
+        EMAILJS_TEMPLATE_ID ===
+            "YOUR_TEMPLATE_ID";
+ 
+ 
+    /*
+    If EmailJS isn't available/configured,
+    fall back to the visitor's email client.
+    */
+ 
+    if (
+        notConfigured ||
+        !window.emailjs
+    ) {
+ 
+ 
+        const body =
+            encodeURIComponent(
+ 
+                "Name: " +
+                params.name +
+ 
+                "\nWork Email: " +
+                params.email +
+ 
+                "\nBusiness / Company: " +
+                params.company +
+ 
+                "\nBusiness Type: " +
+                params.business_type +
+ 
+                "\nWebsite / Instagram: " +
+                params.website +
+ 
+                "\n\nWhat's currently slowing your growth?:\n" +
+                params.challenge +
+ 
+                "\n\nAnything else we should know?:\n" +
+                params.message
+ 
+            );
+ 
+ 
+        window.location.href =
+            "mailto:arkvuebusiness@gmail.com" +
+            "?subject=New%20enquiry%20from%" +
+            encodeURIComponent(params.name) +
+            "&body=" +
+            body;
+ 
+ 
+        return;
+    }
+ 
+ 
+    /* ---------- Sending State ---------- */
+ 
+    submitBtn.disabled = true;
+ 
+    submitBtn.textContent =
+        "Sending...";
+ 
+ 
+    /* ---------- Send With EmailJS ---------- */
+ 
+    emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        params
+    )
+ 
+    .then(() => {
+ 
+        /*
+        Successful submission:
+        send visitor to thank-you page.
+        */
+ 
+        window.location.href =
+            "thank-you.html";
+ 
+    })
+ 
+    .catch(() => {
+ 
+        /*
+        EmailJS failed.
+        Show a fallback message.
+        */
+ 
+        setStatus(
+            "Something went wrong. Please email us directly instead.",
+            "error"
+        );
+ 
+    })
+ 
+    .finally(() => {
+ 
+        /*
+        Restore button state.
+        */
+ 
+        submitBtn.disabled = false;
+ 
+        submitBtn.innerHTML =
+            "Send Enquiry →";
+ 
+    });
+ 
+});
+ 
+</script>
  
 </body>
 </html>
  
+
+
+
+
+
+
