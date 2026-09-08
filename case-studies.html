@@ -1,789 +1,1591 @@
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
- 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <title>ARKVUE Case Studies | Trading Business Growth</title>
+<title>Case Studies — ARKVUE</title>
  
-    <meta
-        name="description"
-        content="Explore how ARKVUE helps trading educators, academies and brokerages improve acquisition, conversion and activation.">
+<meta
+  name="description"
+  content="Real trading businesses ARKVUE has worked with — the bottleneck, what we built, and the results."
+>
  
-    <link rel="canonical" href="https://arkvue.co/case-studies.html">
+<link
+  rel="canonical"
+  href="https://arkvue.co/case-studies.html"
+>
  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;650;700&display=swap"
+  rel="stylesheet"
+>
  
-    <style>
-        :root {
-            --ink: #172033;
-            --muted: #5d6678;
-            --line: #e5e7eb;
-            --soft: #f7f8fa;
-            --accent: #1f6feb;
-            --white: #ffffff;
-            --shadow: 0 20px 60px rgba(23, 32, 51, 0.08);
-            --shadow-small: 0 10px 30px rgba(23, 32, 51, 0.06);
-        }
+<style>
  
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body {
-            background: var(--white);
-            color: var(--ink);
-            font-family: "DM Sans", Inter, ui-sans-serif, system-ui, sans-serif;
-            line-height: 1.5;
-        }
+  :root {
+    --bg: #FFFFFF;
+    --text: #111111;
+    --text-muted: #5B5F6B;
+    --text-faint: #8A8E99;
+    --blue: #2563EB;
+    --blue-hover: #1D4ED8;
+    --grey: #F5F5F5;
+    --border: #E5E5E5;
+    --dark-bg: #111111;
+    --dark-text: #FFFFFF;
+    --dark-text-muted: #A3A7B0;
+  }
  
-        a { color: inherit; text-decoration: none; }
-        img { max-width: 100%; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
  
-        .container {
-            width: min(100% - 40px, 1180px);
-            margin-inline: auto;
-        }
+  html {
+    scroll-behavior: smooth;
+  }
  
-        .section {
-            border-bottom: 1px solid var(--line);
-            padding: 90px 0;
-        }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+  }
  
-        .section-soft { background: var(--soft); }
-        .section-dark { background: var(--ink); color: var(--white); }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
  
-        .eyebrow {
-            color: var(--accent);
-            font-size: 0.78rem;
-            font-weight: 700;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-        }
+  ul {
+    list-style: none;
+  }
  
-        .page-hero {
-            padding: 150px 0 90px;
-            text-align: center;
-            border-bottom: 1px solid var(--line);
-        }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
  
-        .page-hero h1 {
-            margin-top: 18px;
-            color: var(--ink);
-            font-size: clamp(2.4rem, 6vw, 4.4rem);
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            line-height: 1.05;
-        }
  
-        .page-hero p {
-            max-width: 720px;
-            margin: 22px auto 0;
-            color: var(--muted);
-            font-size: 1.08rem;
-            line-height: 1.75;
-        }
+  /* =========================================================
+     HEADER
+     ========================================================= */
  
-        .case-study-shell {
-            border: 1px solid var(--line);
-            border-radius: 28px;
-            background: var(--white);
-            box-shadow: var(--shadow);
-            overflow: hidden;
-        }
- 
-        .case-study-header {
-            padding: 40px 30px;
-            background: var(--soft);
-            border-bottom: 1px solid var(--line);
-        }
- 
-        .case-study-header h2 {
-            margin-top: 10px;
-            color: var(--ink);
-            font-size: clamp(1.8rem, 4vw, 3rem);
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-        }
- 
-        .case-study-body {
-            padding: 40px 30px;
-        }
- 
-        .case-study-body h3 {
-            margin-top: 32px;
-            color: var(--ink);
-            font-size: 1.45rem;
-            font-weight: 700;
-        }
- 
-        .case-study-body p,
-        .case-study-body li {
-            margin-top: 14px;
-            color: var(--muted);
-            font-size: 1rem;
-            line-height: 1.75;
-        }
- 
-        .case-study-body ul {
-            margin-top: 14px;
-            padding-left: 20px;
-        }
- 
-        .case-study-body li {
-            margin-top: 10px;
-        }
- 
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            margin-top: 28px;
-        }
- 
-        .metric-card {
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            background: var(--white);
-            padding: 22px;
-            text-align: center;
-        }
- 
-        .metric-card strong {
-            display: block;
-            color: var(--ink);
-            font-size: 2.2rem;
-            font-weight: 700;
-        }
- 
-        .metric-card span {
-            display: block;
-            margin-top: 6px;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
- 
-        .transformation-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-            margin-top: 28px;
-        }
- 
-        .transform-card {
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            background: var(--soft);
-            padding: 22px;
-        }
- 
-        .transform-card h4 {
-            color: var(--ink);
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
- 
-        .transform-card p {
-            margin-top: 12px;
-            color: var(--muted);
-            font-size: 0.92rem;
-            line-height: 1.6;
-        }
- 
-        .final-cta {
-            padding: 90px 0;
-            text-align: center;
-        }
- 
-        .final-cta h2 {
-            margin-top: 16px;
-            color: var(--white);
-            font-size: clamp(2rem, 5vw, 3.6rem);
-            font-weight: 700;
-            letter-spacing: -0.04em;
-            line-height: 1.05;
-        }
- 
-        .final-cta p {
-            max-width: 620px;
-            margin: 20px auto 0;
-            color: #cbd5e1;
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
- 
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border: 0;
-            border-radius: 999px;
-            padding: 14px 22px;
-            font-size: 0.92rem;
-            font-weight: 700;
-            transition: transform 220ms ease, background 220ms ease, color 220ms ease;
-        }
- 
-        .button:hover { transform: translateY(-3px); }
- 
-        .button-primary {
-            background: var(--accent);
-            color: var(--white);
-            box-shadow: 0 16px 40px rgba(31, 111, 235, 0.2);
-        }
- 
-        .button-primary:hover { background: var(--ink); }
- 
-     .nav-bar {
-    position: fixed;
+  header {
+    border-bottom: 1px solid var(--border);
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
+    background: var(--bg);
     z-index: 100;
-}
-
-.nav-inner {
+  }
+ 
+  .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-
-    width: 100%;
-    max-width: none;
-
-    margin: 0;
-
-    border: 1px solid var(--line);
-    border-radius: 0;
-
-    background: rgba(255, 255, 255, 0.9);
-
-    padding: 14px 48px;
-
-    box-shadow: var(--shadow-small);
-
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    padding: 22px 40px;
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+  }
+ 
+  .logo {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+  }
+ 
+  .nav-links {
+    display: flex;
+    gap: 36px;
+  }
+ 
+  .nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+  }
+ 
+  .nav-links a:hover,
+  .nav-links a:focus-visible {
+    color: var(--text);
+  }
+ 
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+ 
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+ 
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+  }
+ 
+ 
+  /* =========================================================
+     BUTTONS
+     ========================================================= */
+ 
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 24px;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+ 
+  .btn-outline {
+    color: var(--blue);
+    border: 1.5px solid var(--blue);
+    background: transparent;
+  }
+ 
+  .btn-outline:hover,
+  .btn-outline:focus-visible {
+    background: #EFF3FE;
+  }
+ 
+  .btn-solid {
+    color: #FFFFFF;
+    background: var(--blue);
+    border: 1.5px solid var(--blue);
+  }
+ 
+  .btn-solid:hover,
+  .btn-solid:focus-visible {
+    background: var(--blue-hover);
+    border-color: var(--blue-hover);
+  }
+ 
+  .link-blue {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.15s ease;
+  }
+ 
+  .link-blue:hover,
+  .link-blue:focus-visible {
+    color: var(--blue-hover);
+  }
+ 
+ 
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+ 
+  .eyebrow {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 22px;
+  }
+ 
+  .section-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    margin-bottom: 18px;
+  }
+ 
+  h1 {
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+ 
+  h2 {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--text);
+  }
+ 
+  .lede {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 450;
+    color: var(--text-muted);
+    max-width: 480px;
+  }
+ 
+  .fine-print {
+    font-size: 14px;
+    font-weight: 450;
+    color: var(--text-faint);
+  }
+ 
+ 
+  /* =========================================================
+     PAGE HERO
+     ========================================================= */
+ 
+  .page-hero {
+  padding: 88px 0 220px;
+}
+  .page-hero-inner {
+    max-width: 700px;
+  }
+ 
+  .page-hero .lede {
+    max-width: 560px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+ 
+ 
+  /* =========================================================
+     FEATURED CASE STUDY
+     ========================================================= */
+ 
+  .featured-case {
+    background: var(--grey);
+    padding: 68px 0 88px;
+  }
+ 
+  .featured-case-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bg);
+  }
+ 
+  .featured-case-main,
+  .featured-case-stats {
+    padding: 40px;
+  }
+ 
+  .featured-case-main {
+    border-right: 1px solid var(--border);
+  }
+ 
+  .case-identity {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+ 
+ .mark {
+  width: 44px;
+  height: 44px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 2px #FFFFFF;
+  border: none;
+  outline: none;
 }
  
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--ink);
-            font-size: 1.1rem;
-            font-weight: 700;
-        }
+ .mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
  
-        .brand-mark {
-            display: grid;
-            width: 36px;
-            height: 36px;
-            place-items: center;
-            border-radius: 10px;
-            background: var(--ink);
-            color: var(--white);
-            font-size: 0.85rem;
-        }
+  .mark span.fallback {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
  
-        .nav-links {
-            display: flex;
-            gap: 6px;
-        }
+  .mark-ud,
+  .mark-fm,
+  .mark-pt {
+    background: var(--text);
+  }
  
-        .nav-link {
-            border-radius: 999px;
-            padding: 9px 14px;
-            color: var(--muted);
-            font-size: 0.86rem;
-            font-weight: 600;
-        }
+  .case-identity-name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
  
-        .nav-link:hover {
-            background: var(--soft);
-            color: var(--ink);
-        }
+  .case-identity-role {
+    font-size: 14px;
+    font-weight: 450;
+    color: var(--text-faint);
+  }
  
-        footer {
-            border-top: 1px solid var(--line);
-            background: var(--white);
-            padding: 24px 0;
-        }
+  .featured-case-main h3 {
+    font-size: 30px;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
  
-        .footer-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            color: var(--muted);
-            font-size: 0.8rem;
-        }
+  .featured-case-main p {
+    font-size: 15px;
+    font-weight: 450;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 420px;
+    margin-bottom: 26px;
+  }
  
-        .footer-links a:hover { color: var(--accent); }
+  .case-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-faint);
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 26px;
+  }
  
-        @media (max-width: 900px) {
-            .metrics-grid,
-            .transformation-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+  .stat-block {
+    margin-bottom: 26px;
+  }
  
-        @media (max-width: 760px) {
-            .nav-links { display: none; }
-            .page-hero { padding: 130px 0 70px; }
-            .case-study-header,
-            .case-study-body { padding: 28px 20px; }
-        }
+  .stat-block:last-child {
+    margin-bottom: 0;
+  }
  
-        .footer-top {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 40px;
-        }
+  .stat-block.divider {
+    padding-top: 26px;
+    border-top: 1px solid var(--border);
+  }
  
-        .footer-brand .brand {
-            font-size: 1.15rem;
-        }
+  .stat-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
  
-        .footer-brand p {
-            margin-top: 18px;
-            max-width: 280px;
-            color: var(--muted);
-            font-size: .9rem;
-            line-height: 1.65;
-        }
+  .stat-number.big {
+    font-size: 54px;
+  }
  
-        .footer-social {
-            display: flex;
-            gap: 10px;
-            margin-top: 22px;
-        }
+  .stat-number.dark {
+    color: var(--text);
+  }
  
-        .footer-social a {
-            display: grid;
-            width: 40px;
-            height: 40px;
-            place-items: center;
-            border: 1px solid var(--line);
-            border-radius: 50%;
-            color: var(--muted);
-            background: var(--white);
-            transition:
-                color .25s ease,
-                border-color .25s ease,
-                transform .3s ease;
-        }
+  .stat-number .unit {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-left: 4px;
+  }
  
-        .footer-social a:hover {
-            color: var(--accent);
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
+  .stat-label {
+    font-size: 15px;
+    font-weight: 450;
+    margin-bottom: 3px;
+  }
  
-        .footer-col h4 {
-            font-size: .75rem;
-            font-weight: 700;
-            letter-spacing: .14em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
+  .stat-sub {
+    font-size: 13px;
+    font-weight: 450;
+    color: var(--text-faint);
+  }
  
-        .footer-col ul {
-            list-style: none;
-            margin-top: 18px;
-            display: grid;
-            gap: 13px;
-        }
  
-        .footer-col a {
-            color: var(--ink);
-            font-size: .9rem;
-            font-weight: 500;
-            transition: color .2s ease;
-        }
+  /* =========================================================
+     SECONDARY CASE STUDIES
+     ========================================================= */
  
-        .footer-col a:hover {
-            color: var(--accent);
-        }
+  .secondary-cases {
+    padding: 88px 0;
+  }
  
-        .footer-wordmark {
-            font-size: clamp(3rem, 16vw, 12rem);
-            font-weight: 700;
-            letter-spacing: -.02em;
-            line-height: .9;
-            color: transparent;
-            -webkit-text-stroke: 1px rgba(23,32,51,.1);
-            margin-top: 60px;
-            user-select: none;
-            overflow: hidden;
-        }
+  .secondary-case-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
  
-        .footer-bottom {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin-top: 64px;
-            padding-top: 28px;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-            font-size: .8rem;
-        }
+  .mini-case-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px;
+    background: #FFFFFF;
+    transition:
+      background-color 0.18s ease,
+      transform 0.18s ease,
+      box-shadow 0.18s ease;
+  }
  
-        @media (max-width: 1100px) {
-            .footer-top {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+  .mini-case-card:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 26px rgba(17, 17, 17, 0.07);
+    transform: translateY(-1px);
+  }
  
-        @media (max-width: 760px) {
-            .footer-top {
-                grid-template-columns: 1fr;
-                gap: 34px;
-            }
+  .mini-case-card h3 {
+    font-size: 22px;
+    font-weight: 550;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    color: var(--text);
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+  }
  
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
+  .mini-case-card .case-body {
+    font-size: 15px;
+    font-weight: 450;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+ 
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0 26px;
+  }
+ 
+  .tag-pill {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 550;
+    color: var(--text);
+    background: var(--bg);
+  }
+ 
+ 
+  /* =========================================================
+     HOW WE WORK
+     ========================================================= */
+ 
+  .how-we-work {
+    background: var(--grey);
+    padding: 76px 0 88px;
+  }
+ 
+  .how-we-work h2 {
+    margin-bottom: 36px;
+  }
+ 
+  .approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--bg);
+    margin-bottom: 28px;
+  }
+ 
+  .approach-card {
+    padding: 28px;
+    border-right: 1px solid var(--border);
+  }
+ 
+  .approach-card:last-child {
+    border-right: none;
+  }
+ 
+  .approach-num {
+    font-size: 13px;
+    font-weight: 450;
+    color: var(--text-faint);
+    margin-bottom: 14px;
+  }
+ 
+  .approach-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+ 
+  .approach-desc {
+    font-size: 15px;
+    font-weight: 450;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+ 
+ 
+  /* =========================================================
+     CTA BAR
+     ========================================================= */
+ 
+  .cta-bar {
+    padding: 58px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+ 
+  .cta-bar h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+ 
+  .cta-bar .lede {
+    max-width: 420px;
+    margin-bottom: 0;
+  }
+ 
+ 
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+ 
+  footer {
+    background: #0A0A0A;
+    color: var(--dark-text-muted);
+    padding: 60px 0 30px;
+  }
+ 
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    padding-bottom: 40px;
+  }
+ 
+  .footer-col {
+    min-width: 140px;
+  }
+ 
+  .footer-col:nth-child(2) {
+    margin-left: auto;
+  }
+ 
+  .footer-logo {
+    color: var(--dark-text);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+ 
+  .footer-tagline {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 1.5;
+    max-width: 220px;
+  }
+ 
+  .footer-heading {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--dark-text-muted);
+    margin-bottom: 18px;
+  }
+ 
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+ 
+  .footer-links a {
+    font-size: 14px;
+    font-weight: 450;
+    color: #C2C5CC;
+    transition: color 0.15s ease;
+  }
+ 
+  .footer-links a:hover,
+  .footer-links a:focus-visible {
+    color: var(--dark-text);
+  }
+ 
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 28px;
+    border-top: 1px solid #26272C;
+    font-size: 13px;
+    font-weight: 450;
+    color: #6B6F79;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+ 
+  .footer-bottom .link-blue {
+    font-size: 13px;
+  }
+ 
+ 
+  /* =========================================================
+     RESPONSIVE
+     ========================================================= */
+ 
+  @media (max-width: 900px) {
+ 
+    .wrap {
+      padding: 0 24px;
+    }
+ 
+ 
+    /* =======================================================
+       MOBILE NAVBAR
+       ======================================================= */
+ 
+    .nav {
+      width: 100%;
+      max-width: none;
+      padding: 18px 24px;
+      gap: 12px;
+      flex-wrap: nowrap;
+    }
+ 
+    .logo {
+      flex-shrink: 0;
+    }
+ 
+    .nav-toggle {
+      display: flex;
+    }
+ 
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 20px 24px 26px;
+      box-shadow: 0 12px 24px rgba(17, 17, 17, 0.06);
+    }
+ 
+    .nav-menu.open {
+      display: flex;
+    }
+ 
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      width: 100%;
+    }
+ 
+    .nav-links a {
+      font-size: 15px;
+    }
+ 
+    .nav-menu .btn {
+      font-size: 14px;
+      padding: 11px 20px;
+    }
+ 
+ 
+    /* =======================================================
+       PAGE CONTENT
+       ======================================================= */
+ 
+    .page-hero {
+      padding: 48px 0 90px;
+    }
+ 
+    h1 {
+      font-size: 36px;
+    }
+ 
+    h2 {
+      font-size: 28px;
+    }
+ 
+    .featured-case-grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .featured-case-main {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+ 
+    .secondary-case-grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .approach-grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .approach-card {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+ 
+    .approach-card:last-child {
+      border-bottom: none;
+    }
+ 
+    .cta-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+ 
+    .footer-grid {
+      gap: 36px;
+    }
+ 
+    .footer-col:nth-child(2) {
+      margin-left: 0;
+    }
+ 
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+ 
+  }
+ 
+ 
+  /* =========================================================
+     MOBILE NAVBAR — SMALL SCREEN
+     ========================================================= */
+ 
+  @media (max-width: 600px) {
+ 
+    .nav {
+      padding: 16px 16px;
+      gap: 9px;
+    }
+ 
+    .logo {
+      font-size: 17px;
+    }
+ 
+  }
+ 
+ 
+  /* =========================================================
+     MOBILE NAVBAR — VERY SMALL SCREEN
+     ========================================================= */
+ 
+  @media (max-width: 430px) {
+ 
+    .nav {
+      padding: 14px 12px;
+      gap: 7px;
+    }
+ 
+    .logo {
+      font-size: 16px;
+    }
+ 
+  }
+ 
+ 
+  /* =========================================================
+     DESKTOP NAV MENU
+     ========================================================= */
+ 
+  @media (min-width: 901px) {
+ 
+    .nav-toggle {
+      display: none;
+    }
+ 
+    .nav {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+    }
+ 
+    .logo {
+      justify-self: start;
+    }
+ 
+    .nav-menu {
+      display: contents;
+    }
+ 
+    .nav-links {
+      justify-self: center;
+      flex-direction: row;
+      gap: 36px;
+    }
+ 
+    .nav-menu .btn {
+      justify-self: end;
+    }
+ 
+  }
+ 
+ 
+  /* =========================================================
+     REDUCED MOTION
+     ========================================================= */
+ 
+  @media (prefers-reduced-motion: reduce) {
+ 
+    html {
+      scroll-behavior: auto;
+    }
+ 
+    * {
+      transition: none !important;
+    }
+ 
+  }
+ 
+</style>
 </head>
+ 
  
 <body>
  
-    <header class="nav-bar">
-        <div class="nav-inner">
  
-            <a href="index.html" class="brand" aria-label="ARKVUE home">
-                <span class="brand-mark">A</span>
-                <span>ARKVUE</span>
-            </a>
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
  
-            <nav class="nav-links" aria-label="Primary navigation">
-                <a class="nav-link" href="index.html#who-we-help">Who We Help</a>
-                <a class="nav-link" href="index.html#how-it-works">How It Works</a>
-                <a class="nav-link" href="case-studies.html">Case Studies</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-            </nav>
+<header>
  
-            <a class="button button-primary"
-                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                target="_blank"
-                rel="noopener noreferrer">
-                Book a Growth Audit
-            </a>
+  <div class="nav">
+ 
+    <a href="index.html" class="logo">ARKVUE</a>
+ 
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+ 
+    <div class="nav-menu" id="nav-menu">
+ 
+      <nav class="nav-links">
+ 
+        <a href="case-studies.html">Work</a>
+ 
+        <a href="index.html#approach">Approach</a>
+ 
+        <a href="index.html#about">About</a>
+ 
+      </nav>
+ 
+      <a
+        href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-outline"
+      >
+        Book a Growth Audit →
+      </a>
+ 
+    </div>
+ 
+  </div>
+ 
+</header>
+ 
+ 
+<main>
+ 
+ 
+<!-- =========================================================
+     PAGE HERO
+     ========================================================= -->
+ 
+<section class="wrap page-hero">
+ 
+  <div class="page-hero-inner">
+ 
+    <div class="eyebrow">
+      CASE STUDIES
+    </div>
+ 
+    <h1>
+      Real businesses.<br>
+      Real growth problems.
+    </h1>
+ 
+    <p class="lede">
+      We diagnose where growth is being lost, then build around the bottleneck.
+    </p>
+ 
+    <p class="fine-print">
+      Trading Education · Mentorship · Brokerage
+    </p>
+ 
+  </div>
+ 
+</section>
+ 
+ 
+<!-- =========================================================
+     FEATURED CASE STUDY
+     ========================================================= -->
+ 
+<section class="featured-case">
+ 
+  <div class="wrap">
+ 
+    <div class="section-label">
+      FEATURED CASE STUDY
+    </div>
+ 
+    <div class="featured-case-grid">
+ 
+ 
+      <!-- Featured case main -->
+ 
+      <div class="featured-case-main">
+ 
+        <div class="case-identity">
+ 
+          <div class="mark mark-ud">
+ 
+            <img
+              src="favicon/trade-with-ud.png"
+              alt="Trade.with.UD logo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+ 
+            <span class="fallback">
+              UD
+            </span>
+ 
+          </div>
+ 
+          <div>
+ 
+            <div class="case-identity-name">
+              Trade.with.UD
+            </div>
+ 
+            <div class="case-identity-role">
+              Trading Education &amp; Mentorship
+            </div>
+ 
+          </div>
  
         </div>
-    </header>
  
-    <main>
  
-        <section class="page-hero">
-            <div class="container">
+        <h3>
+          From 9K followers to a structured lead-generation system.
+        </h3>
  
-                <div class="eyebrow">Case Study</div>
+        <p>
+          Turning an existing Instagram audience into a more active
+          Telegram and lead-generation system.
+        </p>
  
-                <h1>
-                    From 9K Followers to a Structured Lead-Generation System
-                </h1>
+      </div>
  
-                <p>
-                    How ARKVUE helped a trading education business turn existing
-                    Instagram attention into a clearer, more active lead-generation engine.
-                </p>
  
-            </div>
-        </section>
+      <!-- Featured case stats -->
  
-        <section class="section">
-            <div class="container">
+      <div class="featured-case-stats">
  
-                <div class="case-study-shell">
+        <div class="case-tag">
+          30-DAY GROWTH SPRINT
+        </div>
  
-                    <div class="case-study-header">
-                        <div class="eyebrow">Case Study 01</div>
  
-                        <h2>
-                            Ujjwal Dutta (trade.with.ud)<br>
-                            Trading Education & Mentorship
-                        </h2>
+        <div class="stat-block">
  
-                        <p style="margin-top:12px; color:var(--muted)">
-                            Turning an existing audience into a structured lead-generation system.
-                        </p>
-                    </div>
+          <div class="stat-number big">
+            ~200
+          </div>
  
-                    <div class="case-study-body">
+          <div class="stat-label">
+            Telegram members during the 30-day sprint.
+          </div>
  
-                        <h3>The Challenge</h3>
- 
-                        <p>
-                            Ujjwal had built an Instagram audience of nearly 9,000 followers,
-                            but his content wasn’t consistently converting that attention into enquiries.
-                        </p>
- 
-                        <p>The conversion journey had several gaps:</p>
- 
-                        <ul>
-                            <li>Content was generating attention but wasn’t consistently engineered around conversion.</li>
-                            <li>There was no active Instagram → Telegram acquisition flow.</li>
-                            <li>Telegram onboarding had stalled.</li>
-                            <li>There was no structured nurturing system inside the community.</li>
-                            <li>Leads weren’t being sufficiently pre-qualified before entering sales conversations.</li>
-                        </ul>
- 
-                        <p>
-                            The problem wasn’t attention. It was converting existing attention
-                            into a structured customer journey.
-                        </p>
- 
-                        <h3>What ARKVUE Built — 30-Day Growth Sprint</h3>
- 
-                        <p><strong>01 — Instagram Conversion System</strong></p>
-                        <p>
-                            We rebuilt the profile positioning, CTA architecture and content
-                            structure so that attention had a clear next step toward Telegram
-                            or the relevant offer.
-                        </p>
- 
-                        <p><strong>02 — Telegram Conversion System</strong></p>
-                        <p>
-                            We rebuilt the customer journey:
-                        </p>
-                        <p>
-                            Instagram → Telegram → Onboarding → Nurturing → Buyer Intent
-                        </p>
-                        <p>
-                            This included restructuring the Telegram onboarding experience
-                            and introducing a more active nurturing system inside the community.
-                        </p>
- 
-                        <p><strong>03 — Conversion-Led Content</strong></p>
-                        <p>
-                            We shifted the content strategy toward attracting relevant prospects,
-                            signalling buying intent and moving them toward the next step —
-                            not simply generating views.
-                        </p>
- 
-                        <p><strong>04 — Sales Activation</strong></p>
-                        <p>
-                            We connected the nurtured Telegram audience to live Zoom calls,
-                            creating a direct path from community engagement to sales conversations.
-                        </p>
- 
-                        <h3>The Result — 30 Days</h3>
- 
-                        <div class="metrics-grid">
- 
-                            <div class="metric-card">
-                                <strong>~200</strong>
-                                <span>Telegram members (up from ~50)</span>
-                            </div>
- 
-                            <div class="metric-card">
-                                <strong>10–15/day</strong>
-                                <span>Instagram enquiries during the campaign</span>
-                            </div>
- 
-                            <div class="metric-card">
-                                <strong>~4×</strong>
-                                <span>Community growth in 30 days</span>
-                            </div>
- 
-                        </div>
- 
-                        <h3>The Transformation</h3>
- 
-                        <div class="transformation-grid">
- 
-                            <div class="transform-card">
-                                <h4>Before ARKVUE</h4>
-                                <p>
-                                    9K Instagram followers → Content → Low conversion →
-                                    No active Telegram flow → Limited nurturing →
-                                    ~1–2 enquiries/day
-                                </p>
-                            </div>
- 
-                            <div class="transform-card">
-                                <h4>After ARKVUE</h4>
-                                <p>
-                                    Instagram audience → Conversion-led content →
-                                    Structured CTA → Telegram → Onboarding + nurturing →
-                                    Sales activation → 10–15 enquiries/day during the campaign
-                                </p>
-                            </div>
- 
-                        </div>
- 
-                        <h3>The Outcome</h3>
- 
-                        <p>
-                            In 30 days, ARKVUE helped transform a fragmented customer journey
-                            into a more structured:
-                        </p>
- 
-                        <p>
-                            Instagram → Telegram → Nurturing → Sales
-                        </p>
- 
-                        <p>
-                            system — turning existing audience attention into a clearer and
-                            more active lead-generation engine.
-                        </p>
- 
-                        <p style="margin-top:28px; color:var(--muted); font-size:0.9rem">
-                            Client: Ujjwal Dutta<br>
-                            Business: Trading Education & Mentorship<br>
-                            Engagement: 30-Day Growth Sprint<br>
-                            Instagram:
-                            <a href="https://www.instagram.com/trade.with.ud/"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               style="color:var(--accent)">
-                                @trade.with.ud
-                            </a>
-                        </p>
- 
-                    </div>
- 
-                </div>
- 
-            </div>
-        </section>
- 
-        <section class="section-dark final-cta">
-            <div class="container">
- 
-                <div class="eyebrow" style="color:#60a5fa">
-                    Ready to Find the Bottleneck?
-                </div>
- 
-                <h2>
-                    Find What’s Holding Your Growth Back.
-                </h2>
- 
-                <p>
-                    Book a 30-minute Growth Audit. We’ll examine where your
-                    customer journey is breaking and identify the highest-leverage
-                    next step.
-                </p>
- 
-                <a class="button button-primary"
-                    style="margin-top:28px"
-                    href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    Book a Growth Audit <span>→</span>
-                </a>
- 
-            </div>
-        </section>
- 
-    </main>
- 
-    <footer>
-        <div class="container">
- 
-            <div class="footer-top">
- 
-                <div class="footer-brand">
- 
-                    <a href="index.html" class="brand">
-                        <span class="brand-mark">A</span>
-                        <span>ARKVUE</span>
-                    </a>
- 
-                    <p>
-                        Growth partner for founder-led trading businesses.
-                        We diagnose the bottleneck, then build the system around it.
-                    </p>
- 
-                    <div class="footer-social">
- 
-                        <a
-                            href="https://www.linkedin.com/company/arkvue"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
- 
-                        <a
-                            href="https://www.instagram.com/arkvue.co"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
- 
-                        <a
-                            href="https://x.com/ARKVUE"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="X">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
- 
-                    </div>
- 
-                </div>
- 
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="index.html#who-we-help">Who We Help</a></li>
-                        <li><a href="index.html#how-it-works">How It Works</a></li>
-                        <li><a href="case-studies.html">Case Studies</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
- 
-                <div class="footer-col">
-                    <h4>Audiences</h4>
-                    <ul>
-                        <li><a href="trading-educators.html">Trading Educators</a></li>
-                        <li><a href="trading-academies.html">Trading Academies</a></li>
-                        <li><a href="brokerages.html">Brokerages</a></li>
-                    </ul>
-                </div>
- 
-                <div class="footer-col">
-                    <h4>Get in touch</h4>
-                    <ul>
-                        <li><a href="mailto:arkvuebusiness@gmail.com">arkvuebusiness@gmail.com</a></li>
-                        <li><a href="tel:+917666976869">+91 76669 76869</a></li>
-                        <li>
-                            <a
-                                href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Book a Growth Audit
-                            </a>
-                        </li>
-                    </ul>
-                </div>
- 
-            </div>
- 
-            <div class="footer-bottom">
-                <div>© 2026 ARKVUE. All rights reserved.</div>
-                <div><a href="index.html#top">Back to top ↑</a></div>
-            </div>
+          <div class="stat-sub">
+            from ~50 at start
+          </div>
  
         </div>
-    </footer>
+ 
+ 
+        <div class="stat-block divider">
+ 
+          <div class="stat-number dark">
+            10–15/day
+          </div>
+ 
+          <div class="stat-label">
+            Instagram enquiries during the campaign.
+          </div>
+ 
+        </div>
+ 
+ 
+        <div class="stat-block divider">
+ 
+          <div class="stat-number dark">
+            30<span class="unit">DAYS</span>
+          </div>
+ 
+          <div class="stat-label">
+            Growth Sprint.
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+</section>
+ 
+ 
+<!-- =========================================================
+     SECONDARY CASE STUDIES
+     ========================================================= -->
+ 
+<section class="secondary-cases">
+ 
+  <div class="wrap">
+ 
+    <div class="secondary-case-grid">
+ 
+ 
+      <!-- ProTraders -->
+ 
+      <div class="mini-case-card">
+ 
+        <div class="case-identity">
+ 
+          <div class="mark mark-pt">
+ 
+            <img
+              src="favicon/protraders.png"
+              alt="ProTraders logo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+ 
+            <span class="fallback">
+              PT
+            </span>
+ 
+          </div>
+ 
+          <div>
+ 
+            <div class="case-identity-name">
+              ProTraders
+            </div>
+ 
+            <div class="case-identity-role">
+              Trading Education · Raja Kumar
+            </div>
+ 
+          </div>
+ 
+        </div>
+ 
+ 
+        <h3>
+          Rebuilding the customer journey around content, trust and conversion.
+        </h3>
+ 
+ 
+        <div class="stat-block">
+ 
+          <div class="stat-number dark">
+            30<span class="unit">DAYS</span>
+          </div>
+ 
+          <div class="stat-label">
+            Growth Engagement.
+          </div>
+ 
+        </div>
+ 
+ 
+        <div class="stat-block divider">
+ 
+          <div class="stat-number">
+            &gt;₹1L
+          </div>
+ 
+          <div class="stat-label">
+            Monthly revenue during the engagement.
+          </div>
+ 
+          <div class="stat-sub">
+            from &lt;₹1L at start
+          </div>
+ 
+        </div>
+ 
+ 
+        <div class="stat-block divider">
+ 
+          <p class="case-body">
+            Application subscriptions increased.
+          </p>
+ 
+        </div>
+ 
+      </div>
+ 
+ 
+      <!-- FiboMarkets -->
+ 
+      <div class="mini-case-card">
+ 
+        <div class="case-identity">
+ 
+          <div class="mark mark-fm">
+ 
+            <img
+              src="favicon/fibomarkets.png"
+              alt="FiboMarkets logo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+ 
+            <span class="fallback">
+              FM
+            </span>
+ 
+          </div>
+ 
+          <div>
+ 
+            <div class="case-identity-name">
+              FiboMarkets
+            </div>
+ 
+            <div class="case-identity-role">
+              Forex Brokerage
+            </div>
+ 
+          </div>
+ 
+        </div>
+ 
+ 
+        <h3>
+          Building a stronger content-led conversion and social media foundation.
+        </h3>
+ 
+ 
+        <div class="stat-block">
+ 
+          <div class="stat-number dark">
+            30<span class="unit">DAYS</span>
+          </div>
+ 
+          <div class="stat-label">
+            Engagement.
+          </div>
+ 
+        </div>
+ 
+ 
+        <div class="tag-row">
+ 
+          <span class="tag-pill">
+            Content Systems
+          </span>
+ 
+          <span class="tag-pill">
+            Social Media
+          </span>
+ 
+          <span class="tag-pill">
+            Bio Optimization
+          </span>
+ 
+          <span class="tag-pill">
+            Brand Assets
+          </span>
+ 
+          <span class="tag-pill">
+            Introduction Videos
+          </span>
+ 
+          <span class="tag-pill">
+            Conversion-Focused CTAs
+          </span>
+ 
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+</section>
+ 
+ 
+<!-- =========================================================
+     HOW WE WORK
+     ========================================================= -->
+ 
+<section class="how-we-work">
+ 
+  <div class="wrap">
+ 
+    <div class="section-label">
+      HOW WE WORK
+    </div>
+ 
+    <h2>
+      Every engagement starts with a bottleneck.
+    </h2>
+ 
+ 
+    <div
+      class="approach-grid"
+      style="margin-top:44px;"
+    >
+ 
+      <div class="approach-card">
+ 
+        <div class="approach-num">
+          01
+        </div>
+ 
+        <div class="approach-title">
+          DIAGNOSE
+        </div>
+ 
+        <div class="approach-desc">
+          Find where growth is being lost.
+        </div>
+ 
+      </div>
+ 
+ 
+      <div class="approach-card">
+ 
+        <div class="approach-num">
+          02
+        </div>
+ 
+        <div class="approach-title">
+          BUILD
+        </div>
+ 
+        <div class="approach-desc">
+          Build around the actual bottleneck.
+        </div>
+ 
+      </div>
+ 
+ 
+      <div class="approach-card">
+ 
+        <div class="approach-num">
+          03
+        </div>
+ 
+        <div class="approach-title">
+          MEASURE
+        </div>
+ 
+        <div class="approach-desc">
+          Track whether the change improved the business.
+        </div>
+ 
+      </div>
+ 
+    </div>
+ 
+ 
+    <p
+      class="lede"
+      style="max-width:640px;"
+    >
+      We don't start with a predefined playbook.
+      We start with what's costing the business customers.
+    </p>
+ 
+  </div>
+ 
+</section>
+ 
+ 
+<!-- =========================================================
+     CTA BAR
+     ========================================================= -->
+ 
+<section class="wrap cta-bar">
+ 
+  <div>
+ 
+    <h2>
+      Have a growth problem?
+    </h2>
+ 
+    <p class="lede">
+      Let's find where the customer journey is breaking.
+    </p>
+ 
+  </div>
+ 
+ 
+  <a
+    href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-solid"
+  >
+    Book a Growth Audit →
+  </a>
+ 
+</section>
+ 
+ 
+</main>
+ 
+ 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+ 
+<footer>
+ 
+  <div class="wrap">
+ 
+    <div class="footer-grid">
+ 
+ 
+      <div class="footer-col">
+ 
+        <div class="footer-logo">
+          ARKVUE
+        </div>
+ 
+        <p class="footer-tagline">
+          Growth partner for founder-led trading businesses.
+        </p>
+ 
+      </div>
+ 
+ 
+      <div class="footer-col">
+ 
+        <div class="footer-heading">
+          NAVIGATION
+        </div>
+ 
+        <ul class="footer-links">
+ 
+          <li>
+            <a href="case-studies.html">
+              Work
+            </a>
+          </li>
+ 
+          <li>
+            <a href="index.html#approach">
+              Approach
+            </a>
+          </li>
+ 
+          <li>
+            <a href="index.html#about">
+              About
+            </a>
+          </li>
+ 
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+ 
+        </ul>
+ 
+      </div>
+ 
+ 
+      <div class="footer-col">
+ 
+        <div class="footer-heading">
+          WE WORK WITH
+        </div>
+ 
+        <ul class="footer-links">
+ 
+          <li>
+            <a href="#">
+              Trading Educators
+            </a>
+          </li>
+ 
+          <li>
+            <a href="#">
+              Trading Academies
+            </a>
+          </li>
+ 
+          <li>
+            <a href="#">
+              Brokerages
+            </a>
+          </li>
+ 
+        </ul>
+ 
+      </div>
+ 
+ 
+      <div class="footer-col">
+ 
+        <div class="footer-heading">
+          CONNECT
+        </div>
+ 
+        <ul class="footer-links">
+ 
+          <li>
+            <a
+              href="https://www.linkedin.com/company/arkvue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+ 
+          <li>
+            <a
+              href="https://www.instagram.com/arkvue.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+ 
+          <li>
+            <a
+              href="https://x.com/ARKVUE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              X
+            </a>
+          </li>
+ 
+          <li>
+            <a href="mailto:arkvuebusiness@gmail.com">
+              arkvuebusiness@gmail.com
+            </a>
+          </li>
+ 
+        </ul>
+ 
+      </div>
+ 
+    </div>
+ 
+ 
+    <div class="footer-bottom">
+ 
+      <div>
+        © 2026 ARKVUE. All rights reserved.
+      </div>
+ 
+      <a
+        href="https://calendly.com/hello-arkvue/growth-strategy-call-arkvue-1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="link-blue"
+      >
+        Book a Growth Audit →
+      </a>
+ 
+    </div>
+ 
+  </div>
+ 
+</footer>
+ 
+<script>
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var menu = document.getElementById('nav-menu');
+  if (!toggle || !menu) return;
+  toggle.addEventListener('click', function () {
+    var isOpen = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+ 
  
 </body>
 </html>
  
+
+
+
+
+
+
