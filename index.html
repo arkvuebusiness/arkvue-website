@@ -24,9 +24,15 @@
     --dark-text-muted: #A3A7B0;
   }
  
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
  
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
  
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -36,9 +42,14 @@
     font-weight: 400;
   }
  
-  a { text-decoration: none; color: inherit; }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
  
-  ul { list-style: none; }
+  ul {
+    list-style: none;
+  }
  
   .wrap {
     max-width: 1180px;
@@ -301,33 +312,34 @@
     gap: 14px;
     margin-bottom: 22px;
   }
- .mark {
-  width: 44px;
-  height: 44px;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-  overflow: hidden;
-  box-shadow: inset 0 0 0 2px #FFFFFF;
-  border: none;
-  outline: none;
-}
-
-.mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-}
+ 
+  .mark {
+    width: 44px;
+    height: 44px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 2px #FFFFFF;
+    border: none;
+    outline: none;
+  }
+ 
+  .mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+  }
  
   .mark span.fallback {
     display: none;
@@ -387,8 +399,6 @@
     padding: 40px;
     border-right: 1px solid var(--border);
     background: #FFFFFF;
- 
-    /* ADDED: subtle hover effect */
     transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
   }
  
@@ -867,7 +877,6 @@
       padding: 0 24px;
     }
  
-    /* MOBILE NAVBAR FIX ONLY */
     .nav {
       width: 100%;
       max-width: none;
@@ -1044,7 +1053,6 @@
  
   }
  
- 
   /* ---------- Screenshot fidelity overrides ---------- */
  
   @media (min-width: 901px) {
@@ -1160,7 +1168,6 @@
  
   }
  
- 
   /* ---------- Final Figma spacing + typography pass ---------- */
  
   @media (min-width: 901px) {
@@ -1217,7 +1224,6 @@
     }
  
   }
- 
  
   /* ---------- Final spacing + scale refinement ---------- */
  
@@ -1319,7 +1325,103 @@
     }
  
   }
- 
+
+  /* =========================================================
+     REQUESTED FINAL FIXES
+     ========================================================= */
+
+  /* Prevent unwanted horizontal scrolling */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ---------- MOBILE FIXES ---------- */
+
+  @media (max-width: 900px) {
+
+    /* Fix hero from being slightly cut off on the left */
+    .hero {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .hero-inner {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    /* More breathing room between sections */
+    .clients {
+      padding-top: 80px;
+      padding-bottom: 90px;
+    }
+
+    .work {
+      padding-top: 80px;
+      padding-bottom: 90px;
+    }
+
+    .what-we-do {
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+
+    .approach {
+      padding-top: 80px;
+      padding-bottom: 90px;
+    }
+
+    .principles {
+      padding-top: 85px;
+      padding-bottom: 90px;
+    }
+
+    .about {
+      padding-top: 85px;
+      padding-bottom: 90px;
+    }
+
+    .see-work {
+      padding-top: 65px;
+      padding-bottom: 70px;
+    }
+
+    .final-cta {
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+  }
+
+  /* ---------- DESKTOP ANCHOR FIX ---------- */
+
+  @media (min-width: 901px) {
+
+    /*
+      Keep the sticky navbar from covering
+      the beginning of Approach and About.
+    */
+    #approach,
+    #about {
+      scroll-margin-top: 100px;
+    }
+
+    /* More breathing room around final CTA */
+    .final-cta {
+      padding-top: 105px;
+      padding-bottom: 95px;
+    }
+
+    /* More breathing room in footer */
+    footer {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+
 </style>
 </head>
  
